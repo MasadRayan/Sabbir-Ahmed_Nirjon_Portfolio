@@ -10,7 +10,6 @@ function cn(...classes) {
 
 const navLinks = [
     { name: "HOME", href: "/" },
-    { name: "CV", href: "/cv" },
     {
         name: "RESEARCH",
         href: "/research",
@@ -33,15 +32,15 @@ const navLinks = [
     },
 
     {
-        name: "SOFTWARE",
-        href: "/software",
+        name: "PROJECTS",
+        href: "/projects",
         children: [
-            { name: "BIISQ ISOFORM DISCOVERY", href: "/software/#biisq" },
-            { name: "HAPCOMPASS HAPLOTYPE ASSEMBLY", href: "/software/#hapcompass" },
-            { name: "TRACTATUS IDENTITY-BY-DESCENT", href: "/software/#tractatus" },
-            { name: "DELISHUS VARIANT CALLING", href: "/software/#delishus" },
-            { name: "CYRENE REGULATORY BROWSER", href: "/software/#cyrene" },
-            { name: "TRANSCRIPTOME ASSEMBLY", href: "/software/#transcriptome" },
+            { name: "BIISQ ISOFORM DISCOVERY", href: "/projects/#biisq" },
+            { name: "HAPCOMPASS HAPLOTYPE ASSEMBLY", href: "/projects/#hapcompass" },
+            { name: "TRACTATUS IDENTITY-BY-DESCENT", href: "/projects/#tractatus" },
+            { name: "DELISHUS VARIANT CALLING", href: "/projects/#delishus" },
+            { name: "CYRENE REGULATORY BROWSER", href: "/projects/#cyrene" },
+            { name: "TRANSCRIPTOME ASSEMBLY", href: "/projects/#transcriptome" },
         ],
     },
 
@@ -58,9 +57,7 @@ const navLinks = [
                 href: "/teaching/#cse3500",
             }
         ]
-    },
-    { name: "WIKI", href: "/wiki" },
-    { name: "LAB", href: "/lab" },
+    }
 ];
 
 const Navbar = () => {
@@ -73,18 +70,20 @@ const Navbar = () => {
                 <div className="h-16 md:h-20 flex items-center justify-center relative">
 
                     {/* DESKTOP NAV */}
+
                     <ul className="hidden md:flex items-center gap-10">
                         {navLinks.map((link, i) => (
                             <li key={i} className="relative group">
                                 <Link
                                     href={link.href}
-                                    className="font-semibold text-gray-700 hover:text-black transition"
+                                    className="font-semibold text-gray-700 transition hover:bg-gray-600 hover:text-white hover:rounded-lg hover:p-4"
                                 >
                                     {link.name}
                                 </Link>
 
                                 {link.children && (
-                                    <div className="absolute top-10 left-1/2 -translate-x-1/2 bg-gray-700 text-white rounded-lg p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all w-72 shadow-xl">
+                                    <div className="absolute top-10 left-1/2 -translate-x-1/2 bg-gray-700 text-white rounded-lg p-4 opacity-0 invisible group-hover:opacity-100 
+                                    group-hover:visible transition-all w-72 shadow-xl">
                                         {link.children.map((child, j) => (
                                             <Link
                                                 key={j}
@@ -100,8 +99,16 @@ const Navbar = () => {
                         ))}
                     </ul>
 
+                    <div className="hidden md:block absolute right-0">
+                        <a href="/cv.pdf" download="Sabbir_Nirjon_CV.pdf">
+                            <span className="btn  px-4 py-2 rounded-lg font-funnel font-semibold text-lg cursor-pointer hover:scale-105 ">
+                                Download CV
+                            </span>
+                        </a>
+                    </div>
+
                     {/* MOBILE HEADER */}
-                    <div className="md:hidden flex justify-between items-center w-full sticky top-0 bg-transparent backdrop-blur-2xl z-50 px-4 h-16">
+                    <div className="md:hidden flex justify-between items-center w-full">
                         <Link
                             href="/"
                             className="font-bold text-gray-700 hover:text-black transition"
@@ -120,10 +127,18 @@ const Navbar = () => {
                 </div>
             </nav>
 
+            {/* MOBILE OVERLAY */}
+            {openSidebar && (
+                <div
+                    className="md:hidden fixed inset-0 bg-black/50 z-40"
+                    onClick={() => setOpenSidebar(false)}
+                />
+            )}
+
             {/* MOBILE SIDE DRAWER */}
             <div
                 className={cn(
-                    "md:hidden z-999 fixed top-0 right-0 h-full w-72 bg-[#2d3a3d] text-white shadow-xl transform transition-transform duration-300",
+                    "md:hidden fixed top-0 right-0 h-full w-72 bg-[#2d3a3d] text-white shadow-xl transform transition-transform duration-300 z-50",
                     openSidebar ? "translate-x-0" : "translate-x-full"
                 )}
             >
@@ -136,11 +151,11 @@ const Navbar = () => {
                 </div>
 
                 {/* Drawer Links */}
-                <ul className=" flex flex-col gap-2 px-4 bg-[#2d3a3d]">
+                <ul className="flex flex-col gap-2 px-4 bg-[#2d3a3d]">
                     {navLinks.map((link, i) => (
                         <li key={i}>
                             {/* Parent Row */}
-                            <div className="flex justify-between items-center w-full py-2 font-semibold">
+                            <div className="flex justify-between items-center w-full py-2 font-semibold hover:bg-white hover:text-[#2d3a3d]">
                                 <Link href={link.href} onClick={() => setOpenSidebar(false)}>
                                     {link.name}
                                 </Link>
@@ -179,6 +194,13 @@ const Navbar = () => {
                             )}
                         </li>
                     ))}
+                    <div className="block md:hidden my-5 text-center">
+                        <a href="/cv.pdf" download="Sabbir_Nirjon_CV.pdf">
+                            <span className="btn  px-4 py-2 rounded-lg font-funnel font-semibold text-lg cursor-pointer hover:scale-105 ">
+                                Download CV
+                            </span>
+                        </a>
+                    </div>
                 </ul>
             </div>
         </header>
@@ -186,3 +208,13 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+{/* <div className="block md:hidden">
+                            <a href="/cv.pdf" download="Sabbir_Nirjon_CV.pdf">
+                                <span className="btn  px-4 py-2 rounded-lg font-funnel font-semibold text-lg cursor-pointer hover:scale-105 ">
+                                    Download CV
+                                </span>
+                            </a>
+                        </div> */}

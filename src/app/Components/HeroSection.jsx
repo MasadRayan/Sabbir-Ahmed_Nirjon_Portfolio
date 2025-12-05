@@ -52,8 +52,8 @@ const HeroSection = () => {
                     </div>
 
                     {/* Bio Content */}
-                    <div className="lg:col-span-2 space-y-6 animate-fade-in">
-                        <p className="text-lg leading-relaxed text-foreground/90">
+                    <div className="lg:col-span-2 space-y-6 animate-fade-in md:max-w-11/12 text-center md:text-start">
+                        <p className="text-lg leading-8 text-foreground/90 ">
                             I am an adjunct faculty in the{" "}
                             <a href="#" className="text-link">
                                 Computer Science and Engineering Department
@@ -72,7 +72,7 @@ const HeroSection = () => {
                             genomics and genetics data applied to complex disease.
                         </p>
 
-                        <p className="text-lg leading-relaxed text-text-highlight text-[#0000FF]">
+                        <p className="text-lg leading-8 text-text-highlight text-[#0000FF]">
                             I am looking for <span className="font-bold">motivated</span> PhD students
                             interested in <span className="font-semibold text-[#6B7770]">foundational</span> research
                             at the intersection of statistics, probabilistic machine learning, and
@@ -86,9 +86,6 @@ const HeroSection = () => {
                             </a>
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
         </section>
