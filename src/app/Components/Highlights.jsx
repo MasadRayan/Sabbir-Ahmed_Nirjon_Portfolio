@@ -3,7 +3,7 @@ import React from 'react';
 
 const Highlights = () => {
     return (
-        <div className='mb-100'>
+        <div className=''>
             <div className="flex items-center gap-4 mx-5 md:max-w-[1300px] md:mx-auto my-10">
                 <hr className="flex-1 border-[#6B7770] border-2" />
                 <div className="text-4xl font-semibold text-[#6B7770]">Highlights</div>
