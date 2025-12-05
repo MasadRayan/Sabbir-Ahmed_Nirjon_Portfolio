@@ -1,8 +1,10 @@
-import { Festive } from "next/font/google";
-import Image from "next/image";
+import HeroSection from "./Components/HeroSection";
+
 
 export default function Home() {
   return (
-    <div>HIII</div>
+    <div className="container mx-auto">
+      <HeroSection></HeroSection>
+    </div>
   );
 }
