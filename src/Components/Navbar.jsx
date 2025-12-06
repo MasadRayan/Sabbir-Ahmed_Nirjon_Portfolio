@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Menu, X, ChevronRight } from "lucide-react";
 import Link from "next/link";
 
@@ -62,7 +62,23 @@ const navLinks = [
 
 const Navbar = () => {
     const [openSidebar, setOpenSidebar] = useState(false);
+    const [shouldRender, setShouldRender] = useState(false);
     const [expanded, setExpanded] = useState(null);
+
+    // Handle sidebar opening with transition
+    useEffect(() => {
+        if (openSidebar) {
+            setShouldRender(true);
+            document.body.style.overflow = 'hidden';
+        } else {
+            // Delay unmounting to allow exit animation
+            const timer = setTimeout(() => {
+                setShouldRender(false);
+            }, 300); // Match transition duration
+            document.body.style.overflow = 'unset';
+            return () => clearTimeout(timer);
+        }
+    }, [openSidebar]);
 
     return (
         <header className="sticky top-0 z-50 bg-transparent backdrop-blur-2xl">
@@ -101,7 +117,7 @@ const Navbar = () => {
 
                     <div className="hidden md:block absolute right-0">
                         <a href="/cv.pdf" download="Sabbir_Nirjon_CV.pdf">
-                            <span className="btn  px-4 py-2 rounded-lg font-funnel font-semibold text-lg cursor-pointer hover:scale-105 ">
+                            <span className="btn  px-4 py-2 rounded-lg font-funnel font-semibold text-lg cursor-pointer hover:scale-105 bg-gray-700 text-white ">
                                 Download CV
                             </span>
                         </a>
@@ -128,93 +144,89 @@ const Navbar = () => {
             </nav>
 
             {/* MOBILE OVERLAY */}
-            {openSidebar && (
+            {shouldRender && (
                 <div
-                    className="md:hidden fixed inset-0 bg-black/50 z-40"
+                    className={cn(
+                        "md:hidden fixed inset-0 bg-black/50 z-40 transition-opacity duration-300",
+                        openSidebar ? "opacity-100" : "opacity-0"
+                    )}
                     onClick={() => setOpenSidebar(false)}
                 />
             )}
 
             {/* MOBILE SIDE DRAWER */}
-            <div
-                className={cn(
-                    "md:hidden fixed top-0 right-0 h-full w-72 bg-[#2d3a3d] text-white shadow-xl transform transition-transform duration-300 z-50",
-                    openSidebar ? "translate-x-0" : "translate-x-full"
-                )}
-            >
-                {/* Drawer Header */}
-                <div className="flex justify-between items-center px-4 h-16 border-b border-gray-500">
-                    <h2 className="text-lg font-semibold">Menu</h2>
-                    <button onClick={() => setOpenSidebar(false)}>
-                        <X size={26} />
-                    </button>
-                </div>
-
-                {/* Drawer Links */}
-                <ul className="flex flex-col gap-2 px-4 bg-[#2d3a3d]">
-                    {navLinks.map((link, i) => (
-                        <li key={i}>
-                            {/* Parent Row */}
-                            <div className="flex justify-between items-center w-full py-2 font-semibold hover:bg-white hover:text-[#2d3a3d]">
-                                <Link href={link.href} onClick={() => setOpenSidebar(false)}>
-                                    {link.name}
-                                </Link>
-
-                                {link.children && (
-                                    <button
-                                        className="text-white"
-                                        onClick={() =>
-                                            setExpanded(expanded === i ? null : i)
-                                        }
-                                    >
-                                        <ChevronRight
-                                            className={cn(
-                                                "transition",
-                                                expanded === i && "rotate-90"
-                                            )}
-                                        />
-                                    </button>
-                                )}
-                            </div>
-
-                            {/* Child Links */}
-                            {link.children && expanded === i && (
-                                <div className="ml-4 mt-2 flex flex-col gap-2">
-                                    {link.children.map((child, j) => (
-                                        <Link
-                                            key={j}
-                                            href={child.href}
-                                            onClick={() => setOpenSidebar(false)}
-                                            className="text-sm text-gray-300 hover:text-white py-1"
-                                        >
-                                            {child.name}
-                                        </Link>
-                                    ))}
-                                </div>
-                            )}
-                        </li>
-                    ))}
-                    <div className="block md:hidden my-5 text-center">
-                        <a href="/cv.pdf" download="Sabbir_Nirjon_CV.pdf">
-                            <span className="btn  px-4 py-2 rounded-lg font-funnel font-semibold text-lg cursor-pointer hover:scale-105 ">
-                                Download CV
-                            </span>
-                        </a>
+            {shouldRender && (
+                <div
+                    className={cn(
+                        "md:hidden fixed top-0 right-0 h-full w-72 bg-[#2d3a3d] text-white shadow-xl transform transition-all duration-300 ease-in-out z-50",
+                        openSidebar ? "translate-x-0" : "translate-x-full"
+                    )}
+                >
+                    {/* Drawer Header */}
+                    <div className="flex justify-between items-center px-4 h-16 border-b border-gray-500">
+                        <h2 className="text-lg font-semibold">Menu</h2>
+                        <button onClick={() => setOpenSidebar(false)}>
+                            <X size={26} />
+                        </button>
                     </div>
-                </ul>
-            </div>
+
+                    {/* Drawer Links */}
+                    <ul className="flex flex-col gap-2 px-4 bg-[#2d3a3d]">
+                        {navLinks.map((link, i) => (
+                            <li key={i}>
+                                {/* Parent Row */}
+                                <div className="flex justify-between items-center w-full py-2 font-semibold hover:bg-white hover:text-[#2d3a3d]">
+                                    <Link href={link.href} onClick={() => setOpenSidebar(false)}>
+                                        {link.name}
+                                    </Link>
+
+                                    {link.children && (
+                                        <button
+                                            className="text-white"
+                                            onClick={() =>
+                                                setExpanded(expanded === i ? null : i)
+                                            }
+                                        >
+                                            <ChevronRight
+                                                className={cn(
+                                                    "transition",
+                                                    expanded === i && "rotate-90",
+                                                    "text-white", "hover:text-gray-700"
+                                                )}
+                                            />
+                                        </button>
+                                    )}
+                                </div>
+
+                                {/* Child Links */}
+                                {link.children && expanded === i && (
+                                    <div className="ml-4 mt-2 flex flex-col gap-2">
+                                        {link.children.map((child, j) => (
+                                            <Link
+                                                key={j}
+                                                href={child.href}
+                                                onClick={() => setOpenSidebar(false)}
+                                                className="text-sm text-gray-300 hover:text-white py-1"
+                                            >
+                                                {child.name}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                )}
+                            </li>
+                        ))}
+                        <div className="block md:hidden my-5 text-center">
+                            <a href="/cv.pdf" download="Sabbir_Nirjon_CV.pdf">
+                                <span className="btn  px-4 py-2 rounded-lg font-funnel font-semibold text-lg cursor-pointer hover:scale-105 bg-gray-700 text-white">
+                                    Download CV
+                                </span>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+            )}
         </header>
     );
 };
 
 export default Navbar;
-
-
-
-{/* <div className="block md:hidden">
-                            <a href="/cv.pdf" download="Sabbir_Nirjon_CV.pdf">
-                                <span className="btn  px-4 py-2 rounded-lg font-funnel font-semibold text-lg cursor-pointer hover:scale-105 ">
-                                    Download CV
-                                </span>
-                            </a>
-                        </div> */}
