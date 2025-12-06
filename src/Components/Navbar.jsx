@@ -48,12 +48,12 @@ const navLinks = [
         href: "/teaching",
         children: [
             {
-                name: "CSE5825 BAYESIAN MACHINE LEARNING",
-                href: "/teaching/#cse5825",
+                name: "Bayesian Machine Learning",
+                href: "/teaching/#machine",
             },
             {
-                name: "CSE3500 ALGORITHMS & COMPLEXITY",
-                href: "/teaching/#cse3500",
+                name: "Algorithms and Complexity",
+                href: "/teaching/#complexity",
             }
         ]
     }

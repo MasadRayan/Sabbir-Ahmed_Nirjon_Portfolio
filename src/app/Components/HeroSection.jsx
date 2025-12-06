@@ -16,7 +16,7 @@ const HeroSection = () => {
                         {/* Profile Image */}
                         <div className="w-48 h-48 md:w-56 md:h-56 rounded-full bg-linear-to-br from-muted to-muted/50 r shadow-lg flex items-center justify-center overflow-hidden">
                             <Image 
-                                src="/image.jpg"
+                                src="/profile.jpg"
                                 alt="Profile"
                                 width={200}
                                 height={200}
@@ -35,17 +35,18 @@ const HeroSection = () => {
                                 Computer Science & Engineering Dept.
                             </p>
                             <p className="text-sm text-muted-foreground">Chattogram, 4318</p>
+                            <p className="text-sm text-muted-foreground">Email: <span className="text-blue-600 underline">saifsabbir2k18@gmail.com</span></p>
                         </div>
 
                         {/* Social Icons */}
                         <div className="flex items-center gap-3 mt-6">
-                            <a href="#" className="social-icon" aria-label="Facebook">
+                            <a href="https://www.facebook.com/saifsabbirnirjon" className="social-icon" aria-label="Facebook">
                                 <FaFacebookSquare className="hover:text-gray-600" size={40} />
                             </a>
-                            <a href="#" className="social-icon" aria-label="GitHub">
+                            <a href="https://github.com/Sabbir-Saif" className="social-icon" aria-label="GitHub">
                                 <FaGithubSquare className="hover:text-gray-600" size={40} />
                             </a>
-                            <a href="#" className="social-icon" aria-label="Email">
+                            <a href="saifsabbir2k18@gmail.com" className="social-icon" aria-label="Email">
                                 <FaEnvelope className="hover:text-gray-600"  size={40} />
                             </a>
                         </div>
@@ -62,8 +63,8 @@ const HeroSection = () => {
                             <a href="#" className="text-link">
                                 International Islamic University, Chittagong
                             </a>
-                            . I graduated from Chittagong University of Engineering & Technology with B.S. degrees in
-                            Computer Engineering and Computer Science, received my Ph.D. in
+                            . I graduated from Chittagong University of Engineering & Technology with B.Sc degree in
+                            Electrical and Electronics Engineering, received my Ph.D. in
                             Computer Science from Brown University, advised by Professor Sorin
                             Istrail, and completed my postdoctoral work at Princeton University with
                             Professor Barbara Engelhardt. My research aims to develop probabilistic

@@ -13,7 +13,7 @@ const Highlights = () => {
                 {/* card1 */}
                 <div className='flex flex-col justify-center items-center gap-8'>
                     {/* image */}
-                    <div className='flex flex-col justify-center items-center'>
+                    <div className=' flex flex-col justify-center items-center'>
                         <Image
                             src="/home/1.png"
                             alt="hapcompass"
@@ -33,7 +33,7 @@ const Highlights = () => {
                 {/* card 2 */}
                 <div className='flex flex-col justify-center items-center gap-8'>
                     {/* image */}
-                    <div className='flex flex-col justify-center items-center'>
+                    <div className=' flex flex-col justify-center items-center'>
                         <Image
                             src="/home/2.png"
                             alt="Biisq"
@@ -53,7 +53,7 @@ const Highlights = () => {
                 {/* card 3 */}
                 <div className='flex flex-col justify-center items-center gap-8'>
                     {/* image */}
-                    <div className='flex flex-col justify-center items-center'>
+                    <div className=' flex flex-col justify-center items-center'>
                         <Image
                             src="/home/3.png"
                             alt="cse5825"
@@ -73,7 +73,7 @@ const Highlights = () => {
                 {/* card 4 */}
                 <div className='flex flex-col justify-center items-center gap-8'>
                     {/* image */}
-                    <div className='flex flex-col justify-center items-center'>
+                    <div className=' flex flex-col justify-center items-center'>
                         <Image
                             src="/home/4.png"
                             alt="explore"

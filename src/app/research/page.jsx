@@ -6,7 +6,7 @@ const ResearchPage = () => {
         <div className="max-w-[1300px] mx-auto px-4 md:px-0">
 
             {/* SIDEBAR — visible only on md+ */}
-            <aside className="hidden md:flex flex-col justify-start gap-8 w-64 fixed mt-10">
+            <aside className="hidden md:flex flex-col justify-start gap-6 w-64 fixed mt-10">
                 <h1 className="text-[#6B7770] text-3xl font-bold uppercase mb-5">
                     Projects
                 </h1>
@@ -108,7 +108,7 @@ const ResearchPage = () => {
                                 alt="hapcompass"
                                 width={500}
                                 height={500}
-                                className="w-full h-full object-cover mb-4"
+                                className="w-full h-full object-cover mb-4  border-2 border-[#006376] rounded-lg"
                             />
                         </div>
                     </div>
