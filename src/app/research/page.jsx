@@ -12,7 +12,7 @@ const ResearchPage = () => {
                 </h1>
                 <div>
                     <p>
-                        <a href="#probabilistic-modeling" className="text-xl text-[#6B7770] uppercase pb-2 block">
+                        <a href="#probabilistic-modeling" className="text-xl text-[#6B7770] font-bold uppercase pb-2 block">
                             Probabilistic Modelling
                         </a>
                     </p>
@@ -32,7 +32,7 @@ const ResearchPage = () => {
                 <hr className='w-10/12 border border-[#6B7770]' />
                 <div>
                     <p>
-                        <a href="#genomics-algorithms" className="text-xl text-[#6B7770] uppercase pb-2 block">
+                        <a href="#genomics-algorithms" className="text-xl text-[#6B7770] font-bold uppercase pb-2 block">
                             Genomics Algorithms
                         </a>
                     </p>
@@ -62,7 +62,7 @@ const ResearchPage = () => {
                 <hr className='w-10/12 border border-[#6B7770]' />
                 <div>
                     <p>
-                        <a href="#miscellaneous" className="text-xl text-[#6B7770] uppercase pb-2 block">
+                        <a href="#miscellaneous" className="text-xl text-[#6B7770] font-bold uppercase pb-2 block">
                             Miscellaneous
                         </a>
                     </p>

@@ -40,7 +40,6 @@ const navLinks = [
             { name: "TRACTATUS IDENTITY-BY-DESCENT", href: "/projects/#tractatus" },
             { name: "DELISHUS VARIANT CALLING", href: "/projects/#delishus" },
             { name: "CYRENE REGULATORY BROWSER", href: "/projects/#cyrene" },
-            { name: "TRANSCRIPTOME ASSEMBLY", href: "/projects/#transcriptome" },
         ],
     },
 
