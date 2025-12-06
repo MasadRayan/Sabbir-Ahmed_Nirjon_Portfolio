@@ -1,5 +1,5 @@
 # 🚀 **Sabbir Ahmed Nirjon – Portfolio**
-**Live Site:** https://sabbir-ahmed-nirjon.vercel.app/
+**Live Site:** https://sabbir-ahmed-nirjon-portfolio.vercel.app/
 
 A fully responsive academic portfolio built with **Next.js 16 (App Router)**, featuring dedicated sections for Research, Projects, and Teaching. Designed with a clean UI, optimized images, dynamic anchor navigation, and modular components.
 
