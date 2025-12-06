@@ -68,7 +68,7 @@ const ResearchPage = () => {
                     </p>
                     <div className='text-lg text-[#A1CD9B] leading-relaxed'>
                         <p>
-                            <a href="#miscellaneous" className="block">
+                            <a href="#ml" className="block">
                                 ML and the Law
                             </a>
                         </p>
@@ -228,6 +228,13 @@ const ResearchPage = () => {
                             <li><a href="">[author manuscript] The Clark Phase-able Sample Size Problem Long-range Phasingand Loss of Heterozygosity in GWAS</a></li>
                         </ul>
                     </div>
+                    {/* miscellaneous */}
+                    <div id='phasing' className='mb-10 scroll-mt-24'>
+                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-4'>Miscellaneous</h2>
+                        <p className='text-lg leading-relaxed'>
+                            Our group actively collaborates with professionals in many disciplines to solve problems in many areas outside of computer science, including life sciences, law, and sociology.
+                        </p>
+                    </div>    
                 </div>
             </main>
 
