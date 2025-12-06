@@ -10,7 +10,6 @@ const ResearchPage = () => {
                 <h1 className="text-[#6B7770] text-3xl font-bold uppercase mb-5">
                     Projects
                 </h1>
-
                 <div>
                     <p>
                         <a href="#probabilistic-modeling" className="text-xl text-[#6B7770] uppercase pb-2 block">
@@ -182,6 +181,51 @@ const ResearchPage = () => {
                         <ul className='list-disc pl-4 text-[#006376] underline space-y-2'>
                             <li><a href="">[manuscript] DELISHUS: an efficient and exact algorithm for genome-wide detection of deletion polymorphism in autism</a></li>
                             <li><a href="">Software</a></li>
+                        </ul>
+                    </div>
+                    {/* variant */}
+                    <div id='variant' className='mb-10 scroll-mt-24'>
+                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-4'>Variant Calling</h2>
+                        <div className='flex flex-col md:flex-row gap-5 justify-center items-start'>
+                            <p className='text-lg leading-relaxed'>
+                                Our work on variant calling was focused on computing deletions in genotype array data with applications to Autism. We developed a method that implements exact algorithms for inferring regions of hemizygosity containing genomic deletions of all sizes and frequencies in genotype data based on Mendelian inheritance patterns.
+                            </p>
+                            <Image
+                                src="/research/6.png"
+                                alt="hapcompass"
+                                width={400}
+                                height={500}
+                                className="w-full h-full object-cover mb-4 border-2 border-[#006376] rounded-lg"
+                            />
+                        </div>
+                        <p className='mt-10'>
+                            <span className='text-lg font-bold'>Highlights</span>
+                        </p>
+                        <ul className='list-disc pl-4 text-[#006376] underline space-y-2'>
+                            <li><a href="">[manuscript] DELISHUS: an efficient and exact algorithm for genome-wide detection of deletion polymorphism in autism</a></li>
+                            <li><a href="">Software</a></li>
+                        </ul>
+                    </div>
+                    {/* phasing */}
+                    <div id='phasing' className='mb-10 scroll-mt-24'>
+                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-4'>Haplotype Phasing</h2>
+                        <div className='flex flex-col md:flex-row gap-5 justify-center items-start'>
+                            <p className='text-lg leading-relaxed'>
+                                Genome-wide association studies identify a number of individuals carrying a disease or a trait and comparing these individuals to those that do not or are not known to carry the disease/trait. Both sets of individuals are then genotyped for a large number of genetic variants which are then tested for association to the disease/trait. Current technologies, suitable for large-scale variant screening only yield the genotype information at each SNP site. The actual haplotypes in the typed region can only be obtained at a considerably high experimental cost or via haplotype phasing.
+                            </p>
+                            <Image
+                                src="/research/7.png"
+                                alt="hapcompass"
+                                width={400}
+                                height={500}
+                                className="w-full h-full object-cover mb-4 border-2 border-[#006376] rounded-lg"
+                            />
+                        </div>
+                        <p className='mt-10'>
+                            <span className='text-lg font-bold'>Highlights</span>
+                        </p>
+                        <ul className='list-disc pl-4 text-[#006376] underline space-y-2'>
+                            <li><a href="">[author manuscript] The Clark Phase-able Sample Size Problem Long-range Phasingand Loss of Heterozygosity in GWAS</a></li>
                         </ul>
                     </div>
                 </div>
