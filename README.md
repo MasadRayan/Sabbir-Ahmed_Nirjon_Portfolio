@@ -23,26 +23,6 @@ bun dev
 - **Deployment:** Vercel
 - **Image Optimization:** next/image
 
----
-
-## 📁 **Project Structure**
-src/
-└── app/
-├── Components/
-│ ├── HeroSection.jsx
-│ ├── Highlights.jsx
-├── projects/
-│ └── page.jsx
-├── research/
-│ └── page.jsx
-├── teaching/
-│ └── page.jsx
-├── globals.css
-├── layout.js
-└── page.js
-└── Components/
-└── Navbar.jsx
-
 
 ---
 
