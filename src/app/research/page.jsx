@@ -229,12 +229,28 @@ const ResearchPage = () => {
                         </ul>
                     </div>
                     {/* miscellaneous */}
-                    <div id='phasing' className='mb-10 scroll-mt-24'>
+                    <div id='miscellaneous' className='mb-10 scroll-mt-24'>
                         <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-4'>Miscellaneous</h2>
                         <p className='text-lg leading-relaxed'>
                             Our group actively collaborates with professionals in many disciplines to solve problems in many areas outside of computer science, including life sciences, law, and sociology.
                         </p>
-                    </div>    
+                    </div>
+                    {/* ml */}
+                    <div id='ml' className='mb-10 scroll-mt-24'>
+                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-4'>ML and the Law</h2>
+                        <p className='text-lg leading-relaxed'>
+                            Our group is working on several problems at the intersection of Machine Learning and law. We are particularly interested in modelling court cases and interpretability in legal settings in Connecticut.
+                        </p>
+                    </div>
+                    {/* other */}
+                    <div id='other' className='mb-10 scroll-mt-24'>
+                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-4'>Other Work</h2>
+                        <ul className='list-disc pl-4 space-y-2'>
+                            <li><a href="" className='underline text-[#006376] '>[author manuscript] The Clark Phase-able Sample Size Problem Long-range Phasingand Loss of Heterozygosity in GWAS</a></li>
+                            <li><a href="">[contact for details] Immunogenomics - alternative interpretations of the genetic code</a></li>
+                            <li><a href="">[contact for details] Exact algorithms to optimize probe selection for HIV allele-specific PCR</a></li>
+                        </ul>
+                    </div>
                 </div>
             </main>
 
