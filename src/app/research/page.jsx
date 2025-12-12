@@ -148,7 +148,7 @@ const ResearchPage = () => {
                                 alt="hapcompass"
                                 width={300}
                                 height={300}
-                                className="w-full h-full object-cover mt-8 border-2 border-[#006376] rounded-lg"
+                                className="md:w-140 md:h-80 w-full h-full object-cover md:object-contain mt-8 border-2 border-[#006376] rounded-lg"
                             />
                         </div>
                     </div>
@@ -204,9 +204,9 @@ const ResearchPage = () => {
                                 <Image
                                     src="/home/mri.png"
                                     alt="hapcompass"
-                                    width={1200}
-                                    height={1200}
-                                    className="md:w-full md:h-full object-cover mb-4  border-2 border-[#006376] rounded-lg"
+                                    width={300}
+                                    height={300}
+                                    className="md:w-full md:h-80 h-full w-full md:object-contain object-cover mb-4  border-2 border-[#006376] rounded-lg md:py-2"
                                 />
                             </div>
                         </div>
@@ -222,7 +222,7 @@ const ResearchPage = () => {
                             <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
                                 <iframe
                                     src="https://drive.google.com/file/d/1Cdb4qsjaqmwJopLzPlXioOtevUyd2WLl/preview"
-                                    className="absolute top-0 left-0 w-full h-full rounded-4xl"
+                                    className="absolute top-0 left-0 w-full h-full md:h-80 rounded-4xl"
                                     allow="autoplay"
                                     allowFullScreen
                                 ></iframe>
