@@ -6,25 +6,30 @@ const ResearchPage = () => {
         <div className="max-w-[1300px] mx-auto px-4 md:px-0">
 
             {/* SIDEBAR — visible only on md+ */}
-            <aside className="hidden md:flex flex-col justify-start gap-6 w-64 fixed mt-10">
+            <aside className="hidden md:flex flex-col justify-start gap-6 w-64 fixed mt-1">
                 <h1 className="text-[#6B7770] text-3xl font-bold uppercase mb-5">
-                    Projects
+                    Research Works
                 </h1>
                 <div>
                     <p>
-                        <a href="#probabilistic-modeling" className="text-xl text-[#6B7770] font-bold uppercase pb-2 block">
-                            Probabilistic Modelling
+                        <a href="" className="text-xl text-[#6B7770] font-bold uppercase pb-2 block">
+                            Published works
                         </a>
                     </p>
                     <div className='text-lg text-[#A1CD9B] leading-relaxed'>
                         <p>
-                            <a href="#probabilistic-modeling" className=" block">
-                                Isoform Admixture Model
+                            <a href="#lcg" className=" block">
+                                LCG Attention
                             </a>
                         </p>
                         <p>
-                            <a href="#haplotype" className=" block">
-                                Haplotype Cluster Graphs
+                            <a href="#card" className=" block">
+                                Credit Card Fraud Detection
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#tomato" className=" block">
+                                Tomato leaf disease
                             </a>
                         </p>
                     </div>
@@ -32,49 +37,35 @@ const ResearchPage = () => {
                 <hr className='w-10/12 border border-[#6B7770]' />
                 <div>
                     <p>
-                        <a href="#genomics-algorithms" className="text-xl text-[#6B7770] font-bold uppercase pb-2 block">
-                            Genomics Algorithms
+                        <a href="#chakma" className="text-xl text-[#6B7770] font-bold uppercase pb-2 block">
+                            Works Under Review
                         </a>
                     </p>
                     <div className='text-lg text-[#A1CD9B] leading-relaxed'>
                         <p>
-                            <a href="#genomics-algorithms" className=" block ">
-                                Haplotype Assembly <br />
+                            <a href="#chakma" className=" block ">
+                                NLP Chakma Sentiment Analysis <br />
                             </a>
                         </p>
-                        <p>
-                            <a href="#identity" className=" block ">
-                                Identity-by-descent <br />
-                            </a>
-                        </p>
-                        <p>
-                            <a href="#variant" className=" block ">
-                                Variant Calling <br />
-                            </a>
-                        </p>
-                        <p>
-                            <a href="#phasing" className=" block ">
-                                Haplotype Phasing <br />
-                            </a>
-                        </p>
+
                     </div>
                 </div>
                 <hr className='w-10/12 border border-[#6B7770]' />
                 <div>
                     <p>
-                        <a href="#miscellaneous" className="text-xl text-[#6B7770] font-bold uppercase pb-2 block">
-                            Miscellaneous
+                        <a href="#tumor" className="text-xl text-[#6B7770] font-bold uppercase pb-2 block">
+                            Ongoing Research
                         </a>
                     </p>
                     <div className='text-lg text-[#A1CD9B] leading-relaxed'>
                         <p>
-                            <a href="#ml" className="block">
-                                ML and the Law
+                            <a href="#tumor" className="block">
+                                Brain Tumor Classification and Segmentation
                             </a>
                         </p>
                         <p>
-                            <a href="#other" className="block">
-                                Other Work
+                            <a href="#camera" className="block">
+                                Real-time home surveillence and object detection with YOLOv8 and ESP32 Cam
                             </a>
                         </p>
                     </div>
@@ -87,169 +78,157 @@ const ResearchPage = () => {
                     <h1 className='text-3xl md:text-5xl uppercase font-bold mb-10'>
                         Research Projects
                     </h1>
-                    {/* Probabilistic Modelling */}
-                    <div id='probabilistic-modeling' className='mb-10 scroll-mt-24'>
-                        <h2 className='text-xl md:text-2xl font-semibold uppercase mb-5'>Isoform Admixture Model</h2>
+                    {/* LCG */}
+                    <div id='lcg' className='mb-10 scroll-mt-24'>
+                        <h2 className='text-xl md:text-2xl font-semibold uppercase mb-5'>LCG Attention for Load Forecasting</h2>
                         <div className='flex flex-col md:flex-row justify-center gap-8 items-start'>
                             <div>
                                 <p className='text-lg'>
-                                    Most human protein-coding genes can be transcribed into multiple distinct mRNA isoforms. These alternative splicing patterns encourage molecular diversity, and dysregulation of isoform expression plays an important role in disease. But, isoforms are difficult to characterize from short-read RNA-seq data because they share identical subsequences and occur in different frequencies across tissues and samples. We developed BIISQ, a Bayesian nonparametric model for Isoform discovery and Individual Specific Quantification from short-read RNA-seq data.
+                                    LCG Attention model is a novel deep neural network which fuses an attention enhanced CNN layer with another attention enhanced LSTM. The model is validated using historical load data from the Chattogram district and other benchmark public datasets. Results show that it outperforms several state-of-the-art methods, setting a newbenchmark for regional short-term load prediction. It is primarily benchmarked for load forecasting, a time-series application and can be pioneered for other forecasting methods and NLP.
+                                    Overall methodology involves data preprocessing, increasing the number of features by using time-lag and statsmodels, feature importance calculation, data splitting, LCG Attention model, and model evaluation, respectively.
                                 </p>
                                 <p className='mt-10'>
-                                    <span className='text-lg font-bold'>Highlights</span>
+                                    <span className='text-lg font-bold'>Publication Url</span>
                                 </p>
                                 <ul className='list-disc pl-4 text-[#006376] underline space-y-2'>
-                                    <li><a href="">[manuscript] Bayesian nonparametric discovery of isoforms and individual specific quantification</a></li>
-                                    <li><a href="">Software</a></li>
+                                    <li><a href="https://ieeexplore.ieee.org/document/11172259">[manuscript] A Novel Hybrid Approach for Load Forecasting: Multi-Head Attention Integrated LCG Model with Statistical Outlier Management</a></li>
                                 </ul>
                             </div>
                             <Image
-                                src="/research/1.png"
+                                src="/research/new.png"
                                 alt="hapcompass"
-                                width={500}
-                                height={500}
+                                width={1000}
+                                height={1000}
                                 className="w-full h-full object-cover mb-4  border-2 border-[#006376] rounded-lg"
                             />
                         </div>
                     </div>
-                    {/* Haplotype */}
-                    <div id='haplotype' className='mb-10 scroll-mt-24'>
-                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-2'>haplotype</h2>
+                    {/* Credit card fraud detection */}
+                    <div id='card' className='mb-10 scroll-mt-24'>
+                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-2'>Credit card fraud detection</h2>
                         <p className='text-lg'>
-                            Genetic models cluster genetic sequences by allelic similarity as a proxy for ancestry. These models form the base for population genetics problems, for example, infer demography, resolve haplotype phase, impute missing genotypes, or identify selection. We developed the haplotype cluster graph genetic model that computes graphs where clusters of haplotypes are separated by ancestral recombination and mutations. Updates on the code and manuscript coming soon.
+                            This research investigates the use of machine learning algorithms, such as the Random Forest Classiﬁer, in the development of predictive models for the detection of credit card fraud. The model improves on previous attempts through the combination of secured datasets of anonymized transaction records and a variety of features such as average transaction volume and frequency patterns. The model was built and tested in a dataset that had unbalanced classes where the number of money-related transactions was signiﬁcantly greater than that of fraudulent transactions. The model’s predictive power was boosted by incorporating synthetic oversampling through SMOTE and other advanced preprocessing methods with AUC-ROC statistics of 0.95 being recorded. It also achieves an accuracy of 0.93 and an F1 score of 0.93 indicating strong performance of accurately distinguishing between genuine and distorted transactions.
                         </p>
+                        <p className='mt-10'>
+                            <span className='text-lg font-bold'>Publication Url</span>
+                        </p>
+                        <ul className='list-disc pl-4 text-[#006376] underline space-y-2'>
+                            <li><a href="https://ieeexplore.ieee.org/document/11070257">[manuscript]Integrating Machine Learning and SMOTE Framework: An Effective Credit Card Fraud Detection System</a></li>
+                        </ul>
                         <Image
-                            src="/research/2.png"
+                            src="/research/now.png"
                             alt="hapcompass"
                             width={500}
                             height={1200}
                             className="w-full h-full object-cover my-4 "
                         />
                     </div>
-                    {/* genomics-algorithms */}
-                    <div id='genomics-algorithms' className='mb-10 scroll-mt-24'>
-                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-2'>Haplotype Assembly: HapCompass</h2>
+                    {/* tomato */}
+                    <div id='tomato' className='mb-10 scroll-mt-24'>
+                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-2'>Tomato Leaf Disease Classification with Transfer Learning</h2>
                         <p className='text-lg mb-10'>
-                            The genome sequence of a human individual can be modeled as 23 pairs of sequences of four nucleotide bases, A, C, G and T. However, ~99.5% of any two individuals’ genome sequences is shared within a population. The remaining ~0.5% of the nucleotide bases vary within a population. The sequences of these genomic variants with the non-varying DNA removed is referred to as a haplotype. Reference-based genome assembly algorithms produce assemblies where the DNA of homologous chromosomes is mixed. But, sequence reads are derived from a single haploid fragment and thus provide valuable phase information when they contain two or more variants. The haplotype assembly problem aims to compute the haplotype sequences for each chromosome given a set of aligned sequence reads to the genome and variant information. The haplotype phase of variants is inferred from assembling overlapping sequence reads.
+                            A hybrid deep learning-based architecture is
+                            established including a Convolutional Neural Network
+                            (CNN) with attention mechanisms (Squeeze and Excitation, Spatial),
+                            residual connections, and transfer learning to classify and detect diseases
+                            in tomato leaves. This model demonstrates the potential of channel and
+                            spatial attention to identify irregularities in leaves, as proven through its
+                            99.69% accuracy in the Plant Village tomato leaf dataset. This innovative method enables the development of solutions that are more reliable
+                            and simplified, which could be advantageous to both producers and agricultural practitioners in the future.
+                        </p>
+                        <p className='mt-10'>
+                            <span className='text-lg font-black'>Accepted and Presented in Conference, will be available online soon</span>
+                        </p>
+
+                        <div className='flex flex-col md:flex-row gap-5 justify-center items-start'>
+                            <p className='text-lg'>
+                            </p>
+                            <Image
+                                src="/home/Picture2.png"
+                                alt="hapcompass"
+                                width={300}
+                                height={300}
+                                className="w-full h-full object-cover mt-8"
+                            />
+                        </div>
+                    </div>
+                    {/* chakma */}
+                    <div id='chakma' className='mb-10 scroll-mt-24 md:mt-20'>
+                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-2'>NLP Chakma Sentiment Analysis</h2>
+                        <div className='flex flex-col md:flex-row gap-5 md:gap-10 justify-center items-start'>
+                            <div className='md:w-1/2'>
+                                <p className='text-lg mb-10'>
+                                    Natural Language Processing (NLP) is one of the trending topics in AI. Text
+                                    classification, text completion, and sentiment analysis have been carried out for various
+                                    languages, including English, Bengali, and Spanish. However, there are still languages
+                                    where the potential of NLP is unexplored. The Chakma dialect, spoken by a significant
+                                    ethnic group in the Chittagong Hill Tracts of Bangladesh, is one such area. This study
+                                    makes a novel contribution by assessing sentiment classification in the Chakma language
+                                    for the first time. A Chakma language dataset is formed by collecting some frequently
+                                    used texts from social media networks and Chakma peers. It contains more than 8000
+                                    text samples with three different labels: positive, negative, and neutral. To classify this
+                                    low-resource language effectively, several Bert-based classifiers are fine-tuned and
+                                    validated using accuracy metrics and confusion metrics. Among the classifiers,
+                                    bert-base-uncased obtained 0.85 accuracy and 0.46 validation loss, surpassing the others.
+                                    This study will work as a pioneer for other low-resource ethnic languages that are still
+                                    unexplored in this domain.
+                                </p>
+                            </div>
+
+                            <div className='flex-1'>
+                                <p className='text-lg'>
+                                </p>
+                                <Image
+                                    src="/research/chakma.jpg"
+                                    alt="hapcompass"
+                                    width={1200}
+                                    height={1200}
+                                    className="w-full h-full object-cover mb-4  border-2 border-[#006376] rounded-lg"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    {/* tumor */}
+                    <div id='tumor' className='mb-10 scroll-mt-24 '>
+                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-2 md:mb-4'>Brain Tumor Classification and <br /> Segmentation</h2>
+                        <div className='flex flex-col md:flex-row gap-5 md:gap-10 justify-start items-start'>
+                            <div className='md:w-1/2'>
+                                <p className='text-lg mb-10'>
+                                    <strong>Brain MRI segmentation</strong> is a highly used annotated dataset for brain tumor classification and segmentation. Currently, I am applying different transfer learning methods like ResNet, EfficientNet, MobileNet for classification. Besides, I am exploring the adaptibility of different U-Net variants including robust downsampler like ResNet, MobileNet V3 etc. and attention blocks as upsampler.
+                                </p>
+                            </div>
+
+                            <div className='flex-1'>
+                                <p className='text-lg'>
+                                </p>
+                                <Image
+                                    src="/home/mri.png"
+                                    alt="hapcompass"
+                                    width={1200}
+                                    height={1200}
+                                    className="w-full h-full object-cover mb-4  border-2 border-[#006376] rounded-lg"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    {/* cam */}
+                    <div id='camera' className='mb-10 scroll-mt-24'>
+                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-2'>Real-time home surveillence and object detection with YOLOv8 and ESP32 Cam </h2>
+                        <p className='text-lg mb-10'>
+                            I am guiding a group of students on a Computer Vision project titled ESP-32 cam based home surveillance and
+                            object detection with OpenCV and YOLOv3.
                         </p>
                         <div className='flex flex-col md:flex-row gap-5 justify-center items-start'>
                             <p className='text-lg'>
-                                Our group developed <strong>HapCompass</strong> an algorithm for haplotype assembly that operates on a graph where variants are nodes and edges are defined by sequence reads and viewed as supporting evidence of co-occuring SNP alleles in a haplotype. Haplotype phasings correspond to spanning trees and each spanning tree uniquely defines a cycle basis. We define new optimization problems, analysis of their theoretical complexity, and a formalization of the polyploid haplotype assembly problem.
                             </p>
                             <Image
-                                src="/research/3.png"
+                                src="/home/Picture2.png"
                                 alt="hapcompass"
-                                width={400}
-                                height={500}
-                                className="w-full h-full object-cover mb-4 border-2 border-[#006376] rounded-lg"
+                                width={300}
+                                height={300}
+                                className="w-full h-full object-cover mt-8"
                             />
                         </div>
-                        <p className='mt-10'>
-                            <span className='text-lg font-bold'>Highlights</span>
-                        </p>
-                        <ul className='list-disc pl-4 text-[#006376] underline space-y-2'>
-                            <li><a href="">[manuscript] HapCompass: A Fast Cycle Basis Algorithm for Accurate Haplotype Assembly of Sequence Data</a></li>
-                            <li><a href="">[manuscript] Haplotype assembly in polyploid genomes and identical by descent shared tracts</a></li>
-                            <li><a href="">Software</a></li>
-                        </ul>
-                    </div>
-                    {/* identity */}
-                    <div id='identity' className='mb-10 scroll-mt-24'>
-                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-4'>Identity-by-descent: Tractatus</h2>
-                        <div className='flex flex-col md:flex-row gap-5 justify-center items-start'>
-                            <p className='text-lg'>
-                                Characterizing patters of linkage disequilibrium in a genome-wide population sample is a major challenge in population genomics. It is an important first step to imputing missing data, characterizing relatedness, and inferring recombination or selection. We developed Tractatus, an exact algorithm for computing all IBD haplotype tracts in time linear in the size of the input. Tractatus resolves a long standing open problem, breaking optimally the (worst-case) quadratic time barrier of previous methods often cited as a bottleneck in haplotype analysis of genome-wide association study-sized data.
-                            </p>
-                            <Image
-                                src="/research/4.png"
-                                alt="hapcompass"
-                                width={400}
-                                height={500}
-                                className="w-full h-full object-cover mb-4 border-2 border-[#006376] rounded-lg"
-                            />
-                        </div>
-                        <Image
-                            src="/research/5.png"
-                            alt="hapcompass"
-                            width={500}
-                            height={1200}
-                            className="w-full h-full object-cover my-4 "
-                        />
-                        <p className='mt-10'>
-                            <span className='text-lg font-bold'>Highlights</span>
-                        </p>
-                        <ul className='list-disc pl-4 text-[#006376] underline space-y-2'>
-                            <li><a href="">[manuscript] DELISHUS: an efficient and exact algorithm for genome-wide detection of deletion polymorphism in autism</a></li>
-                            <li><a href="">Software</a></li>
-                        </ul>
-                    </div>
-                    {/* variant */}
-                    <div id='variant' className='mb-10 scroll-mt-24'>
-                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-4'>Variant Calling</h2>
-                        <div className='flex flex-col md:flex-row gap-5 justify-center items-start'>
-                            <p className='text-lg leading-relaxed'>
-                                Our work on variant calling was focused on computing deletions in genotype array data with applications to Autism. We developed a method that implements exact algorithms for inferring regions of hemizygosity containing genomic deletions of all sizes and frequencies in genotype data based on Mendelian inheritance patterns.
-                            </p>
-                            <Image
-                                src="/research/6.png"
-                                alt="hapcompass"
-                                width={400}
-                                height={500}
-                                className="w-full h-full object-cover mb-4 border-2 border-[#006376] rounded-lg"
-                            />
-                        </div>
-                        <p className='mt-10'>
-                            <span className='text-lg font-bold'>Highlights</span>
-                        </p>
-                        <ul className='list-disc pl-4 text-[#006376] underline space-y-2'>
-                            <li><a href="">[manuscript] DELISHUS: an efficient and exact algorithm for genome-wide detection of deletion polymorphism in autism</a></li>
-                            <li><a href="">Software</a></li>
-                        </ul>
-                    </div>
-                    {/* phasing */}
-                    <div id='phasing' className='mb-10 scroll-mt-24'>
-                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-4'>Haplotype Phasing</h2>
-                        <div className='flex flex-col md:flex-row gap-5 justify-center items-start'>
-                            <p className='text-lg leading-relaxed'>
-                                Genome-wide association studies identify a number of individuals carrying a disease or a trait and comparing these individuals to those that do not or are not known to carry the disease/trait. Both sets of individuals are then genotyped for a large number of genetic variants which are then tested for association to the disease/trait. Current technologies, suitable for large-scale variant screening only yield the genotype information at each SNP site. The actual haplotypes in the typed region can only be obtained at a considerably high experimental cost or via haplotype phasing.
-                            </p>
-                            <Image
-                                src="/research/7.png"
-                                alt="hapcompass"
-                                width={400}
-                                height={500}
-                                className="w-full h-full object-cover mb-4 border-2 border-[#006376] rounded-lg"
-                            />
-                        </div>
-                        <p className='mt-10'>
-                            <span className='text-lg font-bold'>Highlights</span>
-                        </p>
-                        <ul className='list-disc pl-4 text-[#006376] underline space-y-2'>
-                            <li><a href="">[author manuscript] The Clark Phase-able Sample Size Problem Long-range Phasingand Loss of Heterozygosity in GWAS</a></li>
-                        </ul>
-                    </div>
-                    {/* miscellaneous */}
-                    <div id='miscellaneous' className='mb-10 scroll-mt-24'>
-                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-4'>Miscellaneous</h2>
-                        <p className='text-lg leading-relaxed'>
-                            Our group actively collaborates with professionals in many disciplines to solve problems in many areas outside of computer science, including life sciences, law, and sociology.
-                        </p>
-                    </div>
-                    {/* ml */}
-                    <div id='ml' className='mb-10 scroll-mt-24'>
-                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-4'>ML and the Law</h2>
-                        <p className='text-lg leading-relaxed'>
-                            Our group is working on several problems at the intersection of Machine Learning and law. We are particularly interested in modelling court cases and interpretability in legal settings in Connecticut.
-                        </p>
-                    </div>
-                    {/* other */}
-                    <div id='other' className='mb-10 scroll-mt-24'>
-                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-4'>Other Work</h2>
-                        <ul className='list-disc pl-4 space-y-2'>
-                            <li><a href="" className='underline text-[#006376] '>[author manuscript] The Clark Phase-able Sample Size Problem Long-range Phasingand Loss of Heterozygosity in GWAS</a></li>
-                            <li><a href="">[contact for details] Immunogenomics - alternative interpretations of the genetic code</a></li>
-                            <li><a href="">[contact for details] Exact algorithms to optimize probe selection for HIV allele-specific PCR</a></li>
-                        </ul>
                     </div>
                 </div>
             </main>

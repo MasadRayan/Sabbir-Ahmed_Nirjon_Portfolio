@@ -15,17 +15,29 @@ const navLinks = [
         href: "/research",
         children: [
             {
-                name: "PROBABILISTIC MODELING",
-                href: "/research/#probabilistic-modeling",
+                name: "LCG ATTENTION",
+                href: "/research/#lcg",
             },
             {
-                name: "GENOMICS ALGORITHMS",
-                href: "/research/#genomics-algorithms",
+                name: "CREDIT CARD FRAUD DETECTION",
+                href: "/research/#card",
             },
             {
-                name: "MISCELLANEOUS",
-                href: "/research/#miscellaneous",
-            }
+                name: "TOMATO LEAF DISEASE",
+                href: "/research/#tomato",
+            },
+            {
+                name: "NLP CHAKMA SENTIMENT ANALYSIS",
+                href: "/research/#chakma",
+            },
+            {
+                name: "BRAIN TUMOR CLASSIFICATION",
+                href: "/research/#tumor",
+            },
+            {
+                name: "REAL-TIME HOME SURVEILLANCE",
+                href: "/research/#camera",
+            },
 
         ]
 
