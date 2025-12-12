@@ -18,17 +18,17 @@ const ResearchPage = () => {
                     </p>
                     <div className='text-lg text-gray-600  leading-relaxed'>
                         <p>
-                            <a href="#lcg" className=" block hover:text-green-300 ">
+                            <a href="#lcg" className=" block hover:text-black">
                                 LCG Attention
                             </a>
                         </p>
                         <p>
-                            <a href="#card" className=" block hover:text-green-300 ">
+                            <a href="#card" className=" block hover:text-black">
                                 Credit Card Fraud Detection
                             </a>
                         </p>
                         <p>
-                            <a href="#tomato" className=" block hover:text-green-300 ">
+                            <a href="#tomato" className=" block hover:text-black">
                                 Tomato leaf disease
                             </a>
                         </p>
@@ -43,7 +43,7 @@ const ResearchPage = () => {
                     </p>
                     <div className='text-lg text-gray-600 leading-relaxed'>
                         <p>
-                            <a href="#chakma" className=" block hover:text-green-300 ">
+                            <a href="#chakma" className=" block hover:text-black">
                                 NLP Chakma Sentiment Analysis <br />
                             </a>
                         </p>
@@ -59,12 +59,12 @@ const ResearchPage = () => {
                     </p>
                     <div className='text-lg text-gray-600 leading-relaxed'>
                         <p>
-                            <a href="#tumor" className="block hover:text-green-300 ">
+                            <a href="#tumor" className="block hover:text-black">
                                 Brain Tumor Classification and Segmentation
                             </a>
                         </p>
                         <p>
-                            <a href="#camera" className="block hover:text-green-300 ">
+                            <a href="#camera" className="block hover:text-black">
                                 Real-time home surveillence and object detection with YOLOv8 and ESP32 Cam
                             </a>
                         </p>
