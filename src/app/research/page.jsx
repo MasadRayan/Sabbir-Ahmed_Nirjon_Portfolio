@@ -204,9 +204,9 @@ const ResearchPage = () => {
                                 <Image
                                     src="/home/mri.png"
                                     alt="hapcompass"
-                                    width={300}
-                                    height={300}
-                                    className="md:w-full md:h-80 h-full w-full md:object-contain object-cover mb-4  border-2 border-[#006376] rounded-lg md:py-2"
+                                    width={1200}
+                                    height={1200}
+                                    className="md:w-full md:h-80  md:object-contain object-cover mb-4 border-2 border-[#006376] rounded-lg md:py-2"
                                 />
                             </div>
                         </div>
