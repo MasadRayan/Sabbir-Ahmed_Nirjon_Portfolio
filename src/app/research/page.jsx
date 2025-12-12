@@ -120,7 +120,7 @@ const ResearchPage = () => {
                             alt="hapcompass"
                             width={500}
                             height={1200}
-                            className="w-full h-full object-cover my-4 "
+                            className="w-full h-full object-cover my-4 border-2 border-[#006376] rounded-lg"
                         />
                     </div>
                     {/* tomato */}
@@ -148,7 +148,7 @@ const ResearchPage = () => {
                                 alt="hapcompass"
                                 width={300}
                                 height={300}
-                                className="w-full h-full object-cover mt-8"
+                                className="w-full h-full object-cover mt-8 border-2 border-[#006376] rounded-lg"
                             />
                         </div>
                     </div>
@@ -193,7 +193,7 @@ const ResearchPage = () => {
                         <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-2 md:mb-4'>Brain Tumor Classification and <br /> Segmentation</h2>
                         <div className='flex flex-col md:flex-row gap-5 md:gap-10 justify-start items-start'>
                             <div className='md:w-1/2'>
-                                <p className='text-lg mb-10'>
+                                <p className='text-lg md:mb-10'>
                                     <strong>Brain MRI segmentation</strong> is a highly used annotated dataset for brain tumor classification and segmentation. Currently, I am applying different transfer learning methods like ResNet, EfficientNet, MobileNet for classification. Besides, I am exploring the adaptibility of different U-Net variants including robust downsampler like ResNet, MobileNet V3 etc. and attention blocks as upsampler.
                                 </p>
                             </div>
@@ -206,7 +206,7 @@ const ResearchPage = () => {
                                     alt="hapcompass"
                                     width={1200}
                                     height={1200}
-                                    className="w-full h-full object-cover mb-4  border-2 border-[#006376] rounded-lg"
+                                    className="md:w-full md:h-full object-cover mb-4  border-2 border-[#006376] rounded-lg"
                                 />
                             </div>
                         </div>
@@ -219,15 +219,15 @@ const ResearchPage = () => {
                             object detection with OpenCV and YOLOv3.
                         </p>
                         <div className='flex flex-col md:flex-row gap-5 justify-center items-start'>
-                            <p className='text-lg'>
-                            </p>
-                            <Image
-                                src="/home/Picture2.png"
-                                alt="hapcompass"
-                                width={300}
-                                height={300}
-                                className="w-full h-full object-cover mt-8"
-                            />
+                            <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+                                <iframe
+                                    src="https://drive.google.com/file/d/1Cdb4qsjaqmwJopLzPlXioOtevUyd2WLl/preview"
+                                    className="absolute top-0 left-0 w-full h-full rounded-4xl"
+                                    allow="autoplay"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
+
                         </div>
                     </div>
                 </div>
