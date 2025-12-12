@@ -4,7 +4,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { FaEnvelope, FaResearchgate, FaLinkedin } from "react-icons/fa";
 const HeroSection = () => {
     return (
-        <section id="home" className="py-12 md:py-16 lg:py-20">
+        <section id="home" className="py-12 md:py-5">
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-16 items-start">
 

@@ -4,12 +4,12 @@ import React from 'react';
 const Highlights = () => {
     return (
         <div className=''>
-            <div className="flex items-center gap-4 mx-5 md:max-w-[1300px] md:mx-auto my-10">
+            <div className="flex items-center gap-4 mx-5 md:max-w-[1300px] md:mx-auto my-10 md:my-3">
                 <hr className="flex-1 border-[#6B7770] border-2" />
                 <div className="text-4xl font-semibold text-[#6B7770]">Highlights</div>
                 <hr className="flex-1 border-[#6B7770] border-2" />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:max-w-[1300px] lg:mx-auto gap-15 md:gap-10 mx-5 my-10 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:max-w-[1300px] lg:mx-auto gap-15 md:gap-10 mx-5 my-10 md:my-4 ">
                 {/* card1 */}
                 <div className='flex flex-col justify-center items-center gap-8'>
                     {/* image */}
@@ -78,7 +78,7 @@ const Highlights = () => {
                     {/* image */}
                     <div className='md:h-70 md:w-70  flex flex-col justify-center items-center'>
                         <Image
-                            src="/home/4.png"
+                            src="/home/language.png"
                             alt="explore"
                             width={200}
                             height={200}

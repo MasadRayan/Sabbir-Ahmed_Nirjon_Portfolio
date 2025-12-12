@@ -91,7 +91,7 @@ const Navbar = () => {
     }, [openSidebar]);
 
     return (
-        <header className="sticky top-0 z-50 bg-transparent backdrop-blur-2xl">
+        <header className="sticky top-0 z-50 bg-linear-to-r from-[#F2F2F2] via-[#D4D4D4] backdrop-blur-2xl">
             <nav className="container mx-auto px-4 md:px-6">
                 <div className="h-16 md:h-20 flex items-center justify-center relative">
 
