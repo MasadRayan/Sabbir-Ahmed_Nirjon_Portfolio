@@ -40,16 +40,16 @@ const HeroSection = () => {
 
                         {/* Social Icons */}
                         <div className="flex items-center gap-3 mt-6">
-                            <a href="https://www.researchgate.net/profile/Saif-Sabbir" className="social-icon" aria-label="Facebook">
+                            <a target="_blank" href="https://www.researchgate.net/profile/Saif-Sabbir" className="social-icon" aria-label="Facebook">
                                 <FaResearchgate className="hover:text-gray-600" size={40} />
                             </a>
-                            <a href="https://github.com/Sabbir-Saif" className="social-icon" aria-label="GitHub">
+                            <a target="_blank" href="https://github.com/Sabbir-Saif" className="social-icon" aria-label="GitHub">
                                 <FaGithubSquare className="hover:text-gray-600" size={40} />
                             </a>
-                            <a href="saifsabbir2k18@gmail.com" className="social-icon" aria-label="Email">
+                            <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=saifsabbir2k18@gmail.com" className="social-icon" aria-label="Email">
                                 <FaEnvelope className="hover:text-gray-600" size={40} />
                             </a>
-                            <a href="https://www.linkedin.com/in/saif-sabbir-23a6531b8" className="social-icon" aria-label="GitHub">
+                            <a target="_blank" href="https://www.linkedin.com/in/saif-sabbir-23a6531b8" className="social-icon" aria-label="GitHub">
                                 <FaLinkedin className="hover:text-gray-600" size={40} />
                             </a>
                         </div>
