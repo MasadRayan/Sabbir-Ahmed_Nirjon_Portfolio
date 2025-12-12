@@ -55,9 +55,9 @@ const ProjectPage = () => {
                             You can check on my projcts from the following GitHub respository link provided here:
                         </p>
                         <ul className='list-disc pl-4 space-y-3 text-lg'>
-                            <li>Personal AI Assistant project using Python libraries  <span className='underline text-[#006376]'><a href="https://github.com/Sabbir-Saif/Personal_AI_Assistant" target='_blank'>[github-respository]</a></span> </li>
-                            <li>NLP text classification model using bert classifier  <span className='underline text-[#006376]'><a href="https://github.com/Sabbir-Saif/Bert-based-NLP-Text-Classification-model" target='_blank'>[github-respository]</a></span> </li>
-                            <li>Brain MRI Image Classification using Transfer Learning <span className='underline text-[#006376]'><a href="https://github.com/Sabbir-Saif/Medical-Image-Analysis-with-Transfer-Learning" target='_blank'>[github-respository]</a></span> </li>
+                            <li>Personal AI Assistant project using Python libraries  <span className='underline text-gray-600'><a href="https://github.com/Sabbir-Saif/Personal_AI_Assistant" target='_blank'>[github-respository]</a></span> </li>
+                            <li>NLP text classification model using bert classifier  <span className='underline text-gray-600'><a href="https://github.com/Sabbir-Saif/Bert-based-NLP-Text-Classification-model" target='_blank'>[github-respository]</a></span> </li>
+                            <li>Brain MRI Image Classification using Transfer Learning <span className='underline text-gray-600'><a href="https://github.com/Sabbir-Saif/Medical-Image-Analysis-with-Transfer-Learning" target='_blank'>[github-respository]</a></span> </li>
                         </ul>
                     </div>
                 </div>

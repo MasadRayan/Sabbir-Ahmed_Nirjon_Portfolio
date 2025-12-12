@@ -31,7 +31,7 @@ const TeachingPage = () => {
                             Archive
                         </a>
                     </p>
-                    <div className='text-lg text-[#A1CD9B] leading-relaxed'>
+                    <div className='text-lg text-gray-600 leading-relaxed'>
                         <p>
                             <a href="" className="block">
                                 CSE2323 & CSE2324

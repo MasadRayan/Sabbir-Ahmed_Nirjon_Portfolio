@@ -16,19 +16,19 @@ const ResearchPage = () => {
                             Published works
                         </a>
                     </p>
-                    <div className='text-lg text-[#A1CD9B] leading-relaxed'>
+                    <div className='text-lg text-gray-600  leading-relaxed'>
                         <p>
-                            <a href="#lcg" className=" block">
+                            <a href="#lcg" className=" block hover:text-green-300 ">
                                 LCG Attention
                             </a>
                         </p>
                         <p>
-                            <a href="#card" className=" block">
+                            <a href="#card" className=" block hover:text-green-300 ">
                                 Credit Card Fraud Detection
                             </a>
                         </p>
                         <p>
-                            <a href="#tomato" className=" block">
+                            <a href="#tomato" className=" block hover:text-green-300 ">
                                 Tomato leaf disease
                             </a>
                         </p>
@@ -41,9 +41,9 @@ const ResearchPage = () => {
                             Works Under Review
                         </a>
                     </p>
-                    <div className='text-lg text-[#A1CD9B] leading-relaxed'>
+                    <div className='text-lg text-gray-600 leading-relaxed'>
                         <p>
-                            <a href="#chakma" className=" block ">
+                            <a href="#chakma" className=" block hover:text-green-300 ">
                                 NLP Chakma Sentiment Analysis <br />
                             </a>
                         </p>
@@ -57,14 +57,14 @@ const ResearchPage = () => {
                             Ongoing Research
                         </a>
                     </p>
-                    <div className='text-lg text-[#A1CD9B] leading-relaxed'>
+                    <div className='text-lg text-gray-600 leading-relaxed'>
                         <p>
-                            <a href="#tumor" className="block">
+                            <a href="#tumor" className="block hover:text-green-300 ">
                                 Brain Tumor Classification and Segmentation
                             </a>
                         </p>
                         <p>
-                            <a href="#camera" className="block">
+                            <a href="#camera" className="block hover:text-green-300 ">
                                 Real-time home surveillence and object detection with YOLOv8 and ESP32 Cam
                             </a>
                         </p>
@@ -90,7 +90,7 @@ const ResearchPage = () => {
                                 <p className='mt-10'>
                                     <span className='text-lg font-bold'>Publication Url</span>
                                 </p>
-                                <ul className='list-disc pl-4 text-[#006376] underline space-y-2'>
+                                <ul className='list-disc pl-4 text-gray-600 underline space-y-2'>
                                     <li><a href="https://ieeexplore.ieee.org/document/11172259">[manuscript] A Novel Hybrid Approach for Load Forecasting: Multi-Head Attention Integrated LCG Model with Statistical Outlier Management</a></li>
                                 </ul>
                             </div>
@@ -112,7 +112,7 @@ const ResearchPage = () => {
                         <p className='mt-10'>
                             <span className='text-lg font-bold'>Publication Url</span>
                         </p>
-                        <ul className='list-disc pl-4 text-[#006376] underline space-y-2'>
+                        <ul className='list-disc pl-4 text-gray-600 underline space-y-2'>
                             <li><a href="https://ieeexplore.ieee.org/document/11070257">[manuscript]Integrating Machine Learning and SMOTE Framework: An Effective Credit Card Fraud Detection System</a></li>
                         </ul>
                         <Image
