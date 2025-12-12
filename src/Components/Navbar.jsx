@@ -59,12 +59,12 @@ const navLinks = [
         href: "/teaching",
         children: [
             {
-                name: "Bayesian Machine Learning",
-                href: "/teaching/#machine",
+                name: "DIGITAL LOGIC DESIGN",
+                href: "/teaching/#dld",
             },
             {
-                name: "Algorithms and Complexity",
-                href: "/teaching/#complexity",
+                name: "MICROPROCESSOR, MICROCONTROLLER AND EMBEDDED SYSTEM",
+                href: "/teaching/#micro",
             }
         ]
     }
