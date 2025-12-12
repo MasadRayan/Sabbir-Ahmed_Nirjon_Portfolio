@@ -35,11 +35,10 @@ const navLinks = [
         name: "PROJECTS",
         href: "/projects",
         children: [
-            { name: "BIISQ ISOFORM DISCOVERY", href: "/projects/#biisq" },
-            { name: "HAPCOMPASS HAPLOTYPE ASSEMBLY", href: "/projects/#hapcompass" },
-            { name: "TRACTATUS IDENTITY-BY-DESCENT", href: "/projects/#tractatus" },
-            { name: "DELISHUS VARIANT CALLING", href: "/projects/#delishus" },
-            { name: "CYRENE REGULATORY BROWSER", href: "/projects/#cyrene" },
+            { name: "PERSONAL AI ASSISTANT", href: "/projects/#ai" },
+            { name: "NLP CLASSIFICATION", href: "/projects/#nlp" },
+            { name: "BRAIN MRI CLASSIFICATION", href: "/projects/#mri" },
+            { name: "PGCB WEB SCRAPPING", href: "/projects/#pgcb" },
         ],
     },
 
