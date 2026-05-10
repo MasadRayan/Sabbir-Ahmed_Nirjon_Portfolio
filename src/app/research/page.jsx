@@ -12,34 +12,6 @@ const ResearchPage = () => {
         <div>
           <p>
             <a
-              href=""
-              className="text-xl text-[#6B7770] font-bold uppercase pb-2 block"
-            >
-              Published works
-            </a>
-          </p>
-          <div className="text-lg text-gray-600 space-y-2 leading-relaxed">
-            <p>
-              <a href="#lcg" className=" block hover:text-black">
-                LCG Attention
-              </a>
-            </p>
-            <p>
-              <a href="#card" className=" block hover:text-black">
-                Credit Card Fraud Detection
-              </a>
-            </p>
-            <p>
-              <a href="#tomato" className=" block hover:text-black">
-                Tomato leaf disease
-              </a>
-            </p>
-          </div>
-        </div>
-        <hr className="w-10/12 border border-[#6B7770]" />
-        <div>
-          <p>
-            <a
               href="#chakma"
               className="text-xl text-[#6B7770] font-bold uppercase pb-2 block"
             >
@@ -82,6 +54,34 @@ const ResearchPage = () => {
             </p>
           </div>
         </div>
+        <hr className="w-10/12 border border-[#6B7770]" />
+        <div>
+          <p>
+            <a
+              href=""
+              className="text-xl text-[#6B7770] font-bold uppercase pb-2 block"
+            >
+              Published works
+            </a>
+          </p>
+          <div className="text-lg text-gray-600 space-y-2 leading-relaxed">
+            <p>
+              <a href="#lcg" className=" block hover:text-black">
+                LCG Attention
+              </a>
+            </p>
+            <p>
+              <a href="#card" className=" block hover:text-black">
+                Credit Card Fraud Detection
+              </a>
+            </p>
+            <p>
+              <a href="#tomato" className=" block hover:text-black">
+                Tomato leaf disease
+              </a>
+            </p>
+          </div>
+        </div>
       </aside>
 
       {/* MAIN CONTENT */}
@@ -90,127 +90,7 @@ const ResearchPage = () => {
           <h1 className="text-3xl md:text-5xl uppercase font-bold mb-10">
             Research Projects
           </h1>
-          {/* LCG */}
-          <div id="lcg" className="mb-10 scroll-mt-24">
-            <h2 className="text-xl md:text-2xl font-semibold uppercase mb-5">
-              LCG Attention for Load Forecasting
-            </h2>
-            <div className="flex flex-col md:flex-row justify-center gap-8 items-start">
-              <div>
-                <p className="text-lg">
-                  LCG Attention model is a novel deep neural network which fuses
-                  an attention enhanced CNN layer with another attention
-                  enhanced LSTM. The model is validated using historical load
-                  data from the Chattogram district and other benchmark public
-                  datasets. Results show that it outperforms several
-                  state-of-the-art methods, setting a newbenchmark for regional
-                  short-term load prediction. It is primarily benchmarked for
-                  load forecasting, a time-series application and can be
-                  pioneered for other forecasting methods and NLP. Overall
-                  methodology involves data preprocessing, increasing the number
-                  of features by using time-lag and statsmodels, feature
-                  importance calculation, data splitting, LCG Attention model,
-                  and model evaluation, respectively.
-                </p>
-                <p className="mt-10">
-                  <span className="text-lg font-bold">Publication Url</span>
-                </p>
-                <ul className="list-disc pl-4 text-gray-600 underline space-y-2">
-                  <li>
-                    <a href="https://ieeexplore.ieee.org/document/11172259">
-                      [manuscript] A Novel Hybrid Approach for Load Forecasting:
-                      Multi-Head Attention Integrated LCG Model with Statistical
-                      Outlier Management
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <Image
-                src="/research/new.png"
-                alt="hapcompass"
-                width={1000}
-                height={1000}
-                className="w-full h-full xl:w-1/2 object-cover mb-4  border-2 border-[#006376] rounded-lg"
-              />
-            </div>
-          </div>
-          {/* Credit card fraud detection */}
-          <div id="card" className="mb-10 scroll-mt-24">
-            <h2 className="text-xl md:text-2xl font-semibold uppercase mt-12 mb-2">
-              Credit card fraud detection
-            </h2>
-            <p className="text-lg">
-              This research investigates the use of machine learning algorithms,
-              such as the Random Forest Classiﬁer, in the development of
-              predictive models for the detection of credit card fraud. The
-              model improves on previous attempts through the combination of
-              secured datasets of anonymized transaction records and a variety
-              of features such as average transaction volume and frequency
-              patterns. The model was built and tested in a dataset that had
-              unbalanced classes where the number of money-related transactions
-              was signiﬁcantly greater than that of fraudulent transactions. The
-              model’s predictive power was boosted by incorporating synthetic
-              oversampling through SMOTE and other advanced preprocessing
-              methods with AUC-ROC statistics of 0.95 being recorded. It also
-              achieves an accuracy of 0.93 and an F1 score of 0.93 indicating
-              strong performance of accurately distinguishing between genuine
-              and distorted transactions.
-            </p>
-            <p className="mt-10">
-              <span className="text-lg font-bold">Publication Url</span>
-            </p>
-            <ul className="list-disc pl-4 text-gray-600 underline space-y-2">
-              <li>
-                <a href="https://ieeexplore.ieee.org/document/11070257">
-                  [manuscript]Integrating Machine Learning and SMOTE Framework:
-                  An Effective Credit Card Fraud Detection System
-                </a>
-              </li>
-            </ul>
-            <Image
-              src="/research/now.png"
-              alt="hapcompass"
-              width={500}
-              height={1200}
-              className="w-full h-full object-cover my-4 border-2 border-[#006376] rounded-lg"
-            />
-          </div>
-          {/* tomato */}
-          <div id="tomato" className="mb-10 scroll-mt-24">
-            <h2 className="text-xl md:text-2xl font-semibold uppercase mt-12 mb-2">
-              Tomato Leaf Disease Classification with Transfer Learning
-            </h2>
-            <p className="text-lg mb-10">
-              A hybrid deep learning-based architecture is established including
-              a Convolutional Neural Network (CNN) with attention mechanisms
-              (Squeeze and Excitation, Spatial), residual connections, and
-              transfer learning to classify and detect diseases in tomato
-              leaves. This model demonstrates the potential of channel and
-              spatial attention to identify irregularities in leaves, as proven
-              through its 99.69% accuracy in the Plant Village tomato leaf
-              dataset. This innovative method enables the development of
-              solutions that are more reliable and simplified, which could be
-              advantageous to both producers and agricultural practitioners in
-              the future.
-            </p>
-            <p className="mt-10">
-              <span className="text-lg font-black">
-                Accepted and Presented in Conference, will be available online
-                soon
-              </span>
-            </p>
-
-            <div className="flex flex-col md:flex-row gap-5 justify-center items-start">
-              <p className="text-lg"></p>
-              <Image
-                src="/home/Picture2.png"
-                alt="hapcompass"
-                width={300}
-                height={300}
-                className="md:w-140 md:h-80 w-full h-full object-cover md:object-contain mt-8 border-2 border-[#006376] rounded-lg"
-              />
-            </div>
-          </div>
+          
 
           {/* tumor */}
           <div id="tumor" className="mb-10 scroll-mt-24 md:mt-15">
@@ -297,8 +177,8 @@ const ResearchPage = () => {
           </div>
 
           {/* SAM */}
-          <div id="sam" className=" scroll-mt-24">
-            <h2 className="text-xl md:text-2xl font-semibold uppercase mt-12 mb-2">
+          <div id="sam" className=" scroll-mt-24 mb-16">
+            <h2 className="text-xl md:text-2xl font-semibold uppercase mt-12 mb-2 ">
               Refined Segment Anything Model
             </h2>
             <p className="text-lg mb-10">
@@ -334,11 +214,135 @@ const ResearchPage = () => {
               <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
                 <iframe
                   src="https://drive.google.com/file/d/1Cdb4qsjaqmwJopLzPlXioOtevUyd2WLl/preview"
-                  className="absolute top-0 left-0 w-full h-full md:h-100 rounded-4xl"
+                  className="absolute top-0 left-0 w-full h-full md:h-[500px] rounded-4xl"
                   allow="autoplay"
                   allowFullScreen
                 ></iframe>
               </div>
+            </div>
+          </div>
+
+          {/* LCG */}
+          <div id="lcg" className="mb-10 scroll-mt-24">
+            <h2 className="text-xl md:text-2xl font-semibold uppercase mb-5">
+              LCG Attention for Load Forecasting
+            </h2>
+            <div className="flex flex-col md:flex-row justify-center gap-8 items-start">
+              <div>
+                <p className="text-lg">
+                  LCG Attention model is a novel deep neural network which fuses
+                  an attention enhanced CNN layer with another attention
+                  enhanced LSTM. The model is validated using historical load
+                  data from the Chattogram district and other benchmark public
+                  datasets. Results show that it outperforms several
+                  state-of-the-art methods, setting a newbenchmark for regional
+                  short-term load prediction. It is primarily benchmarked for
+                  load forecasting, a time-series application and can be
+                  pioneered for other forecasting methods and NLP. Overall
+                  methodology involves data preprocessing, increasing the number
+                  of features by using time-lag and statsmodels, feature
+                  importance calculation, data splitting, LCG Attention model,
+                  and model evaluation, respectively.
+                </p>
+                <p className="mt-10">
+                  <span className="text-lg font-bold">Publication Url</span>
+                </p>
+                <ul className="list-disc pl-4 text-gray-600 underline space-y-2">
+                  <li>
+                    <a href="https://ieeexplore.ieee.org/document/11172259">
+                      [manuscript] A Novel Hybrid Approach for Load Forecasting:
+                      Multi-Head Attention Integrated LCG Model with Statistical
+                      Outlier Management
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <Image
+                src="/research/new.png"
+                alt="hapcompass"
+                width={1000}
+                height={1000}
+                className="w-full h-full xl:w-1/2 object-cover mb-4  border-2 border-[#006376] rounded-lg"
+              />
+            </div>
+          </div>
+
+          {/* Credit card fraud detection */}
+          <div id="card" className="mb-10 scroll-mt-24">
+            <h2 className="text-xl md:text-2xl font-semibold uppercase mt-12 mb-2">
+              Credit card fraud detection
+            </h2>
+            <p className="text-lg">
+              This research investigates the use of machine learning algorithms,
+              such as the Random Forest Classiﬁer, in the development of
+              predictive models for the detection of credit card fraud. The
+              model improves on previous attempts through the combination of
+              secured datasets of anonymized transaction records and a variety
+              of features such as average transaction volume and frequency
+              patterns. The model was built and tested in a dataset that had
+              unbalanced classes where the number of money-related transactions
+              was signiﬁcantly greater than that of fraudulent transactions. The
+              model’s predictive power was boosted by incorporating synthetic
+              oversampling through SMOTE and other advanced preprocessing
+              methods with AUC-ROC statistics of 0.95 being recorded. It also
+              achieves an accuracy of 0.93 and an F1 score of 0.93 indicating
+              strong performance of accurately distinguishing between genuine
+              and distorted transactions.
+            </p>
+            <p className="mt-10">
+              <span className="text-lg font-bold">Publication Url</span>
+            </p>
+            <ul className="list-disc pl-4 text-gray-600 underline space-y-2">
+              <li>
+                <a href="https://ieeexplore.ieee.org/document/11070257">
+                  [manuscript]Integrating Machine Learning and SMOTE Framework:
+                  An Effective Credit Card Fraud Detection System
+                </a>
+              </li>
+            </ul>
+            <Image
+              src="/research/now.png"
+              alt="hapcompass"
+              width={500}
+              height={1200}
+              className="w-full h-full object-cover my-4 border-2 border-[#006376] rounded-lg"
+            />
+          </div>
+          
+          {/* tomato */}
+          <div id="tomato" className="mb-10 scroll-mt-24">
+            <h2 className="text-xl md:text-2xl font-semibold uppercase mt-12 mb-2">
+              Tomato Leaf Disease Classification with Transfer Learning
+            </h2>
+            <p className="text-lg mb-10">
+              A hybrid deep learning-based architecture is established including
+              a Convolutional Neural Network (CNN) with attention mechanisms
+              (Squeeze and Excitation, Spatial), residual connections, and
+              transfer learning to classify and detect diseases in tomato
+              leaves. This model demonstrates the potential of channel and
+              spatial attention to identify irregularities in leaves, as proven
+              through its 99.69% accuracy in the Plant Village tomato leaf
+              dataset. This innovative method enables the development of
+              solutions that are more reliable and simplified, which could be
+              advantageous to both producers and agricultural practitioners in
+              the future.
+            </p>
+            <p className="mt-10">
+              <span className="text-lg font-black">
+                Accepted and Presented in Conference, will be available online
+                soon
+              </span>
+            </p>
+
+            <div className="flex flex-col md:flex-row gap-5 justify-center items-start">
+              <p className="text-lg"></p>
+              <Image
+                src="/home/Picture2.png"
+                alt="hapcompass"
+                width={300}
+                height={300}
+                className="md:w-140 md:h-80 w-full h-full object-cover md:object-contain mt-8 border-2 border-[#006376] rounded-lg"
+              />
             </div>
           </div>
         </div>
