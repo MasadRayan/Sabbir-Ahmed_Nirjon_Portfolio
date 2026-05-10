@@ -172,6 +172,7 @@ const ResearchPage = () => {
                   height={1200}
                   className="w-full h-full object-cover mb-4  border-2 border-[#006376] rounded-lg"
                 />
+                
               </div>
             </div>
           </div>
