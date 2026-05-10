@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import Link from 'next/link';
 
 const Highlights = () => {
     return (
@@ -9,7 +10,7 @@ const Highlights = () => {
                 <div className="text-4xl font-semibold text-[#6B7770]">Highlights</div>
                 <hr className="flex-1 border-[#6B7770] border-2" />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:max-w-[1300px] lg:mx-auto gap-15 md:gap-10 mx-5 my-10 md:my-4 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:max-w-[1300px] lg:mx-auto gap-15 md:gap-10 mx-5 my-10 md:my-4 md:mt-10 ">
                 {/* card1 */}
                 <div className='flex flex-col justify-center items-center gap-8'>
                     {/* image */}
@@ -20,13 +21,14 @@ const Highlights = () => {
                             width={200}
                             height={200}
                             className="w-full h-full object-contain hover:scale-115 transition-all duration-300 mb-4"
-                        />
-                        <div className='text-2xl font-semibold text-[#6B7770]'>LCG Attention</div>
+                        /> 
+                        <Link href='research/#lcg' className='hover:text-black transition-all text-2xl font-semibold text-[#6B7770]'>LCG Attention</Link>
                     </div>
                     {/* description */}
                     <div>
-                        <p className='text-[#6B7770] leading-8 max-w-10/12 md:max-w-full mx-auto text-center md:text-start'>
-                            LCG Attention model is a novel deep neural network which fuses an attention enhanced CNN layer with another attention enhanced LSTM. The model is validated across the five different regional datasets achieving 0.98 - 0.99 r2score outperforming sota models. It is primarily benchmarked for load forecasting, a time-series application and can be pioneered for other forecasting methods and NLP.
+                        <p className='text-[#6B7770] leading-8 max-h-100 overflow-auto max-w-10/12 md:max-w-full mx-auto text-center md:text-start'>
+                            LCG Attention model is a novel deep neural network which fuses an attention enhanced CNN layer with another attention enhanced LSTM. The model is validated using historical load data from the Chattogram district and other benchmark public datasets. Results show that it outperforms several state-of-the-art methods, setting a newbenchmark for regional short-term load prediction. It is primarily benchmarked for load forecasting, a time-series application and can be pioneered for other forecasting methods and NLP. Overall methodology involves data preprocessing, increasing the number of features by using time-lag and statsmodels, feature importance calculation, data splitting, LCG Attention model, and model evaluation, respectively.
+
                         </p>
                     </div>
                 </div>
@@ -41,15 +43,13 @@ const Highlights = () => {
                             height={200}
                             className="w-full h-full object-contain hover:scale-115 transition-all duration-300 mb-8 md:mb-4"
                         />
-                        <div className='text-2xl font-semibold text-[#6B7770]'>Leaf disease classification</div>
+                        <Link href="/research/#tomato" className='text-2xl font-semibold text-[#6B7770] hover:text-black transition'>Tomato Leaf disease classification</Link>
                     </div>
                     {/* description */}
                     <div>
-                        <p className='text-[#6B7770] leading-8 max-w-10/12 md:max-w-full mx-auto text-center md:text-start'>
-                            A hybrid deep learning-based architecture is
-                            established using CNN with attention mechanisms,residual connections, and transfer learning to classify and detect 10 different diseases
-                            in tomato leaves. This model demonstrates the potential of channel and spatial attention to identify irregularities in leaves, as proven through its
-                            99.69% accuracy in the tomato leaf image dataset.
+                        <p className='text-[#6B7770] leading-8 max-h-100 overflow-auto max-w-10/12 md:max-w-full mx-auto text-center md:text-start'>
+                            A hybrid deep learning-based architecture is established including a Convolutional Neural Network (CNN) with attention mechanisms (Squeeze and Excitation, Spatial), residual connections, and transfer learning to classify and detect diseases in tomato leaves. This model demonstrates the potential of channel and spatial attention to identify irregularities in leaves, as proven through its 99.69% accuracy in the Plant Village tomato leaf dataset. This innovative method enables the development of solutions that are more reliable and simplified, which could be advantageous to both producers and agricultural practitioners in the future.
+
                         </p>
                     </div>
                 </div>
@@ -64,7 +64,7 @@ const Highlights = () => {
                             height={40}
                             className="w-full h-full object-contain hover:scale-115 transition-all duration-300 mb-4"
                         />
-                        <div className='text-2xl font-semibold md:mt-2 md:mb-5 text-[#6B7770]'>Lightweight Brain Tumor Segmentation Model</div>
+                        <Link href="/research/#tumor" className='text-2xl hover:text-black transition-all font-semibold md:mt-2 md:mb-5 text-[#6B7770]'>Lightweight Brain Tumor Segmentation Model</Link>
                     </div>
                     {/* description */}
                     <div>
@@ -85,7 +85,7 @@ const Highlights = () => {
                             height={200}
                             className="w-full h-full object-contain hover:scale-115 transition-all duration-300 mb-8"
                         />
-                        <div className='text-2xl font-semibold text-[#6B7770] text-center md:text-start'>NLP Chakma Sentiment Analysis</div>
+                        <Link href="/research/#chakma" className='text-2xl hover:text-black transition-all font-semibold text-[#6B7770] text-center md:text-start'>NLP Chakma Sentiment Analysis</Link>
                     </div>
                     {/* description */}
                     <div>
