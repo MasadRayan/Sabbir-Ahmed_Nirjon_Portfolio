@@ -35,13 +35,13 @@ const navLinks = [
                 href: "/research/#tumor",
             },
             {
+                name: "REFINED SEGMENT ANYTHING MODEL",
+                href: "/research/#sam",
+            },
+            {
                 name: "REAL-TIME HOME SURVEILLANCE",
                 href: "/research/#camera",
             },
-            {
-                name: "REFINED SEGMENT ANYTHING MODEL",
-                href: "/projects/#SAM",
-            }
 
         ]
 
