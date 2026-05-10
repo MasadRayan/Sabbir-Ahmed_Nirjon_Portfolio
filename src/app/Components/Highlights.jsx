@@ -56,7 +56,7 @@ const Highlights = () => {
                 {/* card 3 */}
                 <div className='flex flex-col justify-center items-center gap-8'>
                     {/* image */}
-                    <div className='md:h-50 md:w-60 flex flex-col justify-center items-center md:mb-5'>
+                    <div className='md:h-50 md:w-60 flex flex-col justify-center items-center md:mb-5 md:mt-15'>
                         <Image
                             src="/home/mri.png"
                             alt="cse5825"
@@ -64,19 +64,20 @@ const Highlights = () => {
                             height={40}
                             className="w-full h-full object-contain hover:scale-115 transition-all duration-300 mb-4"
                         />
-                        <div className='text-2xl font-semibold text-[#6B7770]'>Brain Tumor Segmentation</div>
+                        <div className='text-2xl font-semibold md:mt-2 md:mb-5 text-[#6B7770]'>Lightweight Brain Tumor Segmentation Model</div>
                     </div>
                     {/* description */}
                     <div>
-                        <p className='text-[#6B7770] leading-8 max-w-10/12 md:max-w-full mx-auto text-center md:text-start'>
-                            <strong>Brain MRI segmentation</strong> is a highly used annotated dataset for brain tumor classification and segmentation. Currently, I am applying different transfer learning methods like ResNet, EfficientNet, MobileNet for classification. Besides, I am exploring the adaptibility of different U-Net variants including robust downsampler like ResNet, MobileNet V3 etc. and attention blocks as upsampler.
+                        <p className='text-[#6B7770] leading-8 max-h-100 overflow-auto max-w-10/12 md:max-w-full mx-auto text-center md:text-start mt-5'>
+                            The proposed <strong>Brain Tumor Segmentation Model</strong> is a lightweight, two-stage deep learning framework designed for the efficient detection and segmentation of Lower-Grade Gliomas (LGG) from MRI images. The model employs a basic encoder-decoder architecture inspired from UNet while emplying depth-wise convolutions as backbone  for high-efficiency feature extraction. It also integrates Attention into the skip connections to filter redundant noise and emphasize tumor-relevant features. Operating through a cascaded pipeline, the system first classifies the presence of a tumor before performing pixel-wise segmentation, significantly reducing unnecessary computational overhead. Experimental results demonstrate state-of-the-art performance, achieving a mean Dice score of 0.95 and a mean IoU of 0.91, while maintaining a significantly lower parameter count compared to traditional models like UNet.
+
                         </p>
                     </div>
                 </div>
                 {/* card 4 */}
                 <div className='flex flex-col justify-center items-center gap-8'>
                     {/* image */}
-                    <div className='md:h-70 md:w-70  flex flex-col justify-center items-center'>
+                    <div className='md:h-70 md:w-70  flex flex-col justify-center items-center md:mt-15'>
                         <Image
                             src="/home/language.png"
                             alt="explore"
@@ -84,12 +85,13 @@ const Highlights = () => {
                             height={200}
                             className="w-full h-full object-contain hover:scale-115 transition-all duration-300 mb-8"
                         />
-                        <div className='text-2xl font-semibold text-[#6B7770] text-center md:text-start'>Sentiment Classification on Chakma Language</div>
+                        <div className='text-2xl font-semibold text-[#6B7770] text-center md:text-start'>NLP Chakma Sentiment Analysis</div>
                     </div>
                     {/* description */}
                     <div>
-                        <p className='text-[#6B7770] leading-8 max-w-10/12 md:max-w-full mx-auto text-center md:text-start'>
-                            Chakma, an ethnic language from Bangladesh, was largely unexplored in sentiment classification. Considering this as an opportunity, I created a raw Chakma dataset with sentiment identification, then applied BERT and incorporated early fusion with Word2Vec embedding. I collected chakma text from social media, chakma peers etc. and identified the sentiment. My model achieved 80 - 85% accuracy among several bert classifiers. 
+                        <p className='text-[#6B7770] leading-8 max-h-100 overflow-auto max-w-10/12 md:max-w-full mx-auto text-center md:text-start'>
+                            Natural Language Processing (NLP) is one of the trending topics in AI. Text classification, text completion, and sentiment analysis have been carried out for various languages, including English, Bengali, and Spanish. However, there are still languages where the potential of NLP is unexplored. The Chakma dialect, spoken by a significant ethnic group in the Chittagong Hill Tracts of Bangladesh, is one such area. This study makes a novel contribution by assessing sentiment classification in the Chakma language for the first time. A Chakma language dataset is formed by collecting some frequently used texts from social media networks and Chakma peers. It contains more than 8000 text samples with three different labels: positive, negative, and neutral. To classify this low-resource language effectively, several Bert-based classifiers are fine-tuned and validated using accuracy metrics and confusion metrics. Among the classifiers, bert-base-uncased obtained 0.85 accuracy and 0.46 validation loss, surpassing the others. This study will work as a pioneer for other low-resource ethnic languages that are still unexplored in this domain.
+
                         </p>
                     </div>
                 </div>

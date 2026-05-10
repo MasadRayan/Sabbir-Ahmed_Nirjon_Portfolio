@@ -29,7 +29,7 @@ const HeroSection = () => {
                             <h1 className="text-2xl md:text-3xl font-heading font-bold tracking-wide text-foreground">
                                 Saif Sabbir
                             </h1>
-                            <p className="text-sm text-muted-foreground">Adjunct Lecturer</p>
+                            <p className="text-sm text-muted-foreground">Lecturer</p>
                             <p className="text-sm text-muted-foreground">Department of Computer Science & Engineering</p>
                             <p className="text-sm text-muted-foreground">
                                 International Islamic University, Chittagong
@@ -58,22 +58,13 @@ const HeroSection = () => {
                     {/* Bio Content */}
                     <div className="lg:col-span-2 space-y-6 animate-fade-in md:max-w-11/12 text-center md:text-start">
                         <p className="text-lg leading-8 text-foreground/90 ">
-                            I am an adjunct faculty member in the{" "}
-                            <a href="#" className="text-link">
-                                Computer Science and Engineering Department
-                            </a>{" "}
-                            at{" "}
-                            <a href="#" className="text-link">
-                                International Islamic University, Chittagong
-                            </a>
-                            . I graduated from Chittagong University of Engineering & Technology in June 2024 with B.Sc degree in
-                            Electrical and Electronic Engineering. My research interest follows deep learning, image processing, computer vision and natural language processing. Currently, I am working with real-time video analysis, image classification and segmentation methods, deep learning and transfer learning models etc. Additionally, I also dream for transitioning the current healthcare system with AI-driven smooth
-                            disease diagnosis, drug discovery and surveillance of patients. I believe that having the opportunity to work with leading researchers from various disciplines in ECE and CS may help me shaping this goal.
+                            I am serving as a Lecturer in the Computer Science and Engineering Department at International Islamic University, Chittagong. I graduated from Chittagong University of Engineering & Technology in June 2024 with B.Sc degree in Electrical and Electronic Engineering. My research interest follows Medical Image Processing, Real-time Vision and Surveillance in Healthcare, Deep Learning, Transfer Learning etc. Recently, I have developed a lightweight encoder-decoder based segmentation model for Brain Tumor MRI Scans and currently, I am analyzing the Segment Anything Model (SAM) to integrate some novel features for Image processing tasks. Additionally, I have also worked in Natural Language processing (NLP) and transformer models BERT. I believe that having the opportunity to work with leading researchers from various disciplines in ECE, CS or Biomedical may help me bring some innovation in my research fields. 
+
                         </p>
 
                         <p className="text-lg leading-8 text-text-highlight text-[#0000FF]">
                             I am looking for a fully funded PhD position as a <span className="font-bold"> Graduate Research Assistant/Teaching Assistant</span> in USA.
-                            I am interested to join <span className="font-bold">the PhD program in ECE/CS department</span> of a reputed university with possible funding facilities.
+                            I am interested to join <span className="font-bold">the PhD program in ECE/CS department</span> of a reputed university in <span className="font-bold">Spring 2027/Fall 2027</span> with possible funding facilities.
                         </p>
 
                         

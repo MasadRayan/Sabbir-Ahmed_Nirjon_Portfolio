@@ -16,7 +16,7 @@ const ResearchPage = () => {
                             Published works
                         </a>
                     </p>
-                    <div className='text-lg text-gray-600  leading-relaxed'>
+                    <div className='text-lg text-gray-600 space-y-2 leading-relaxed'>
                         <p>
                             <a href="#lcg" className=" block hover:text-black">
                                 LCG Attention
@@ -57,7 +57,7 @@ const ResearchPage = () => {
                             Ongoing Research
                         </a>
                     </p>
-                    <div className='text-lg text-gray-600 leading-relaxed'>
+                    <div className='text-lg text-gray-600 space-y-2 leading-relaxed'>
                         <p>
                             <a href="#tumor" className="block hover:text-black">
                                 Brain Tumor Classification and Segmentation
@@ -65,7 +65,7 @@ const ResearchPage = () => {
                         </p>
                         <p>
                             <a href="#camera" className="block hover:text-black">
-                                Real-time home surveillence and object detection with YOLOv8 and ESP32 Cam
+                                Real-time monitoring with Computer Vision 
                             </a>
                         </p>
                     </div>
@@ -84,8 +84,7 @@ const ResearchPage = () => {
                         <div className='flex flex-col md:flex-row justify-center gap-8 items-start'>
                             <div>
                                 <p className='text-lg'>
-                                    LCG Attention model is a novel deep neural network which fuses an attention enhanced CNN layer with another attention enhanced LSTM. The model is validated using historical load data from the Chattogram district and other benchmark public datasets. Results show that it outperforms several state-of-the-art methods, setting a newbenchmark for regional short-term load prediction. It is primarily benchmarked for load forecasting, a time-series application and can be pioneered for other forecasting methods and NLP.
-                                    Overall methodology involves data preprocessing, increasing the number of features by using time-lag and statsmodels, feature importance calculation, data splitting, LCG Attention model, and model evaluation, respectively.
+                                    LCG Attention model is a novel deep neural network which fuses an attention enhanced CNN layer with another attention enhanced LSTM. The model is validated using historical load data from the Chattogram district and other benchmark public datasets. Results show that it outperforms several state-of-the-art methods, setting a newbenchmark for regional short-term load prediction. It is primarily benchmarked for load forecasting, a time-series application and can be pioneered for other forecasting methods and NLP. Overall methodology involves data preprocessing, increasing the number of features by using time-lag and statsmodels, feature importance calculation, data splitting, LCG Attention model, and model evaluation, respectively.
                                 </p>
                                 <p className='mt-10'>
                                     <span className='text-lg font-bold'>Publication Url</span>
@@ -99,7 +98,7 @@ const ResearchPage = () => {
                                 alt="hapcompass"
                                 width={1000}
                                 height={1000}
-                                className="w-full h-full object-cover mb-4  border-2 border-[#006376] rounded-lg"
+                                className="w-full h-full xl:w-1/2 object-cover mb-4  border-2 border-[#006376] rounded-lg"
                             />
                         </div>
                     </div>
@@ -127,14 +126,7 @@ const ResearchPage = () => {
                     <div id='tomato' className='mb-10 scroll-mt-24'>
                         <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-2'>Tomato Leaf Disease Classification with Transfer Learning</h2>
                         <p className='text-lg mb-10'>
-                            A hybrid deep learning-based architecture is
-                            established including a Convolutional Neural Network
-                            (CNN) with attention mechanisms (Squeeze and Excitation, Spatial),
-                            residual connections, and transfer learning to classify and detect diseases
-                            in tomato leaves. This model demonstrates the potential of channel and
-                            spatial attention to identify irregularities in leaves, as proven through its
-                            99.69% accuracy in the Plant Village tomato leaf dataset. This innovative method enables the development of solutions that are more reliable
-                            and simplified, which could be advantageous to both producers and agricultural practitioners in the future.
+                            A hybrid deep learning-based architecture is established including a Convolutional Neural Network (CNN) with attention mechanisms (Squeeze and Excitation, Spatial), residual connections, and transfer learning to classify and detect diseases in tomato leaves. This model demonstrates the potential of channel and spatial attention to identify irregularities in leaves, as proven through its 99.69% accuracy in the Plant Village tomato leaf dataset. This innovative method enables the development of solutions that are more reliable and simplified, which could be advantageous to both producers and agricultural practitioners in the future.
                         </p>
                         <p className='mt-10'>
                             <span className='text-lg font-black'>Accepted and Presented in Conference, will be available online soon</span>
@@ -213,16 +205,15 @@ const ResearchPage = () => {
                     </div>
                     {/* cam */}
                     <div id='camera' className='mb-10 scroll-mt-24'>
-                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-2'>Real-time home surveillence and object detection with YOLOv8 and ESP32 Cam </h2>
+                        <h2 className='text-xl md:text-2xl font-semibold uppercase mt-12 mb-2'>Real-time monitoring with Computer Vision </h2>
                         <p className='text-lg mb-10'>
-                            I am guiding a group of students on a Computer Vision project titled ESP-32 cam based home surveillance and
-                            object detection with OpenCV and YOLOv3.
+                            Real-time monitoring and surveillance with Computer Vision is one of my current projects in collaboration of IIUC. I am guiding a group of students on project titled ESP-32 cam based robotic car surveillance and object detection with OpenCV and YOLOv26. Some extra features are to be added to fine-tune the current YOLO model. A comparison between YOLOv8, v11 and v26 will also be performed for making a robust result summary.
                         </p>
                         <div className='flex flex-col md:flex-row gap-5 justify-center items-start'>
                             <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
                                 <iframe
                                     src="https://drive.google.com/file/d/1Cdb4qsjaqmwJopLzPlXioOtevUyd2WLl/preview"
-                                    className="absolute top-0 left-0 w-full h-full md:h-80 rounded-4xl"
+                                    className="absolute top-0 left-0 w-full h-full md:h-100 rounded-4xl"
                                     allow="autoplay"
                                     allowFullScreen
                                 ></iframe>
