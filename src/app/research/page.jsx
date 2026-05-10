@@ -60,12 +60,17 @@ const ResearchPage = () => {
                     <div className='text-lg text-gray-600 space-y-2 leading-relaxed'>
                         <p>
                             <a href="#tumor" className="block hover:text-black">
-                                Brain Tumor Classification and Segmentation
+                                Lightweight Brain Tumor Segmentation Model 
                             </a>
                         </p>
                         <p>
                             <a href="#camera" className="block hover:text-black">
                                 Real-time monitoring with Computer Vision 
+                            </a>
+                        </p>
+                        <p>
+                            <a href="SAM" className="block hover:text-black">
+                                Refined Segment Anything Model
                             </a>
                         </p>
                     </div>
@@ -186,7 +191,8 @@ const ResearchPage = () => {
                         <div className='flex flex-col md:flex-row gap-5 md:gap-10 justify-start items-start'>
                             <div className='md:w-1/2'>
                                 <p className='text-lg md:mb-10'>
-                                    <strong>Brain MRI segmentation</strong> is a highly used annotated dataset for brain tumor classification and segmentation. Currently, I am applying different transfer learning methods like ResNet, EfficientNet, MobileNet for classification. Besides, I am exploring the adaptibility of different U-Net variants including robust downsampler like ResNet, MobileNet V3 etc. and attention blocks as upsampler.
+                                    The proposed <strong>Brain MRI segmentation model</strong> is a lightweight, two-stage deep learning framework designed for the efficient detection and segmentation of Lower-Grade Gliomas (LGG) from MRI images. The model employs a basic encoder-decoder architecture inspired from UNet while emplying depth-wise convolutions as backbone  for high-efficiency feature extraction. It also integrates Attention into the skip connections to filter redundant noise and emphasize tumor-relevant features. Operating through a cascaded pipeline, the system first classifies the presence of a tumor before performing pixel-wise segmentation, significantly reducing unnecessary computational overhead. Experimental results demonstrate state-of-the-art performance, achieving a mean Dice score of 0.95 and a mean IoU of 0.91, while maintaining a significantly lower parameter count compared to traditional models like UNet.
+
                                 </p>
                             </div>
 

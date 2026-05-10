@@ -31,13 +31,17 @@ const navLinks = [
                 href: "/research/#chakma",
             },
             {
-                name: "BRAIN TUMOR CLASSIFICATION",
+                name: "BRAIN TUMOR SEGMENTATION MODEL",
                 href: "/research/#tumor",
             },
             {
                 name: "REAL-TIME HOME SURVEILLANCE",
                 href: "/research/#camera",
             },
+            {
+                name: "REFINED SEGMENT ANYTHING MODEL",
+                href: "/projects/#SAM",
+            }
 
         ]
 
