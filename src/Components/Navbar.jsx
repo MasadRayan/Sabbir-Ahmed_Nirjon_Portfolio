@@ -27,12 +27,12 @@ const navLinks = [
                 href: "/research/#tomato",
             },
             {
-                name: "NLP CHAKMA SENTIMENT ANALYSIS",
-                href: "/research/#chakma",
-            },
-            {
                 name: "BRAIN TUMOR SEGMENTATION MODEL",
                 href: "/research/#tumor",
+            },
+            {
+                name: "NLP CHAKMA SENTIMENT ANALYSIS",
+                href: "/research/#chakma",
             },
             {
                 name: "REFINED SEGMENT ANYTHING MODEL",

@@ -46,7 +46,12 @@ const ResearchPage = () => {
               Works Under Review
             </a>
           </p>
-          <div className="text-lg text-gray-600 leading-relaxed">
+          <div className="text-lg text-gray-600 space-y-2 leading-relaxed">
+            <p>
+              <a href="#tumor" className="block hover:text-black">
+                Lightweight Brain Tumor Segmentation Model
+              </a>
+            </p>
             <p>
               <a href="#chakma" className=" block hover:text-black">
                 NLP Chakma Sentiment Analysis <br />
@@ -65,11 +70,6 @@ const ResearchPage = () => {
             </a>
           </p>
           <div className="text-lg text-gray-600 space-y-2 leading-relaxed">
-            <p>
-              <a href="#tumor" className="block hover:text-black">
-                Lightweight Brain Tumor Segmentation Model
-              </a>
-            </p>
             <p>
               <a href="#sam" className="block hover:text-black">
                 Refined Segment Anything Model
@@ -211,6 +211,47 @@ const ResearchPage = () => {
               />
             </div>
           </div>
+
+          {/* tumor */}
+          <div id="tumor" className="mb-10 scroll-mt-24 md:mt-15">
+            <h2 className="text-xl md:text-2xl font-semibold uppercase mt-12 mb-2 md:mb-4">
+              Brain Tumor Classification and <br /> Segmentation
+            </h2>
+            <div className="flex flex-col md:flex-row gap-5 md:gap-10 justify-start items-start">
+              <div className="md:w-1/2">
+                <p className="text-lg ">
+                  The proposed <strong>Brain MRI segmentation model</strong> is
+                  a lightweight, two-stage deep learning framework designed for
+                  the efficient detection and segmentation of Lower-Grade
+                  Gliomas (LGG) from MRI images. The model employs a basic
+                  encoder-decoder architecture inspired from UNet while emplying
+                  depth-wise convolutions as backbone for high-efficiency
+                  feature extraction. It also integrates Attention into the skip
+                  connections to filter redundant noise and emphasize
+                  tumor-relevant features. Operating through a cascaded
+                  pipeline, the system first classifies the presence of a tumor
+                  before performing pixel-wise segmentation, significantly
+                  reducing unnecessary computational overhead. Experimental
+                  results demonstrate state-of-the-art performance, achieving a
+                  mean Dice score of 0.95 and a mean IoU of 0.91, while
+                  maintaining a significantly lower parameter count compared to
+                  traditional models like UNet.
+                </p>
+              </div>
+
+              <div className="flex-1">
+                <p className="text-lg"></p>
+                <Image
+                  src="/home/mri.png"
+                  alt="hapcompass"
+                  width={1200}
+                  height={1200}
+                  className="md:w-full md:h-80  md:object-contain object-cover mb-4 border-2 border-[#006376] rounded-lg md:py-2"
+                />
+              </div>
+            </div>
+          </div>
+
           {/* chakma */}
           <div id="chakma" className="mb-10 scroll-mt-24 md:mt-20">
             <h2 className="text-xl md:text-2xl font-semibold uppercase mt-12 mb-2">
@@ -250,45 +291,6 @@ const ResearchPage = () => {
                   width={1200}
                   height={1200}
                   className="w-full h-full object-cover mb-4  border-2 border-[#006376] rounded-lg"
-                />
-              </div>
-            </div>
-          </div>
-          {/* tumor */}
-          <div id="tumor" className="mb-10 scroll-mt-24 ">
-            <h2 className="text-xl md:text-2xl font-semibold uppercase mt-12 mb-2 md:mb-4">
-              Brain Tumor Classification and <br /> Segmentation
-            </h2>
-            <div className="flex flex-col md:flex-row gap-5 md:gap-10 justify-start items-start">
-              <div className="md:w-1/2">
-                <p className="text-lg md:mb-10">
-                  The proposed <strong>Brain MRI segmentation model</strong> is
-                  a lightweight, two-stage deep learning framework designed for
-                  the efficient detection and segmentation of Lower-Grade
-                  Gliomas (LGG) from MRI images. The model employs a basic
-                  encoder-decoder architecture inspired from UNet while emplying
-                  depth-wise convolutions as backbone for high-efficiency
-                  feature extraction. It also integrates Attention into the skip
-                  connections to filter redundant noise and emphasize
-                  tumor-relevant features. Operating through a cascaded
-                  pipeline, the system first classifies the presence of a tumor
-                  before performing pixel-wise segmentation, significantly
-                  reducing unnecessary computational overhead. Experimental
-                  results demonstrate state-of-the-art performance, achieving a
-                  mean Dice score of 0.95 and a mean IoU of 0.91, while
-                  maintaining a significantly lower parameter count compared to
-                  traditional models like UNet.
-                </p>
-              </div>
-
-              <div className="flex-1">
-                <p className="text-lg"></p>
-                <Image
-                  src="/home/mri.png"
-                  alt="hapcompass"
-                  width={1200}
-                  height={1200}
-                  className="md:w-full md:h-80  md:object-contain object-cover mb-4 border-2 border-[#006376] rounded-lg md:py-2"
                 />
               </div>
             </div>
