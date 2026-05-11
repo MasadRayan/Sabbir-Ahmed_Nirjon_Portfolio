@@ -230,7 +230,7 @@ const Navbar = () => {
                             </li>
                         ))}
                         <div className="block md:hidden my-5 text-center">
-                            <a href="/cv.pdf" download="Sabbir_Nirjon_CV.pdf">
+                            <a href="/Resume_Template_for_PhD_applicant (1).pdf" download="Sabbir_Nirjon_CV.pdf">
                                 <span className="btn  px-4 py-2 rounded-lg font-funnel font-semibold text-lg cursor-pointer hover:scale-105 bg-gray-700 text-white">
                                     Download CV
                                 </span>
